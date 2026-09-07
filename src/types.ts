@@ -7,6 +7,8 @@ export interface AudioLink {
   label: string
   url: string
   downloadUrl: string
+  /** esv-embed = in-browser player; audible = optional Audible app/web */
+  kind?: 'esv-embed' | 'audible' | string
 }
 
 export interface Question {

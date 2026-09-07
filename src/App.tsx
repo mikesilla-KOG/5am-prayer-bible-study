@@ -33,10 +33,7 @@ export default function App() {
 
   return (
     <div className="app-shell">
-      <Header
-        onHome={() => setView({ name: 'home' })}
-        onAllLessons={() => setView({ name: 'all' })}
-      />
+      <Header onHome={() => setView({ name: 'home' })} />
       <main className="app-main">
         {view.name === 'home' && (
           <Home
@@ -55,14 +52,18 @@ export default function App() {
             onBack={() => setView({ name: 'home' })}
           />
         )}
-        {view.name === 'day' && (
+        {view.name === 'day' &&
           (() => {
             const lesson = getLessonByDay(lessons, view.dayNumber)
             if (!lesson) {
               return (
                 <section className="card">
                   <h1>Day not found</h1>
-                  <button type="button" className="btn secondary" onClick={() => setView({ name: 'all' })}>
+                  <button
+                    type="button"
+                    className="btn secondary big"
+                    onClick={() => setView({ name: 'all' })}
+                  >
                     All lessons
                   </button>
                 </section>
@@ -72,12 +73,11 @@ export default function App() {
               <DayView
                 lesson={lesson}
                 badge={`Day ${lesson.dayNumber} of ${lessons.length}`}
-                onBack={() => setView({ name: 'all' })}
+                onBack={() => setView({ name: 'home' })}
                 onAllLessons={() => setView({ name: 'all' })}
               />
             )
-          })()
-        )}
+          })()}
       </main>
       <footer className="site-footer">
         <p>

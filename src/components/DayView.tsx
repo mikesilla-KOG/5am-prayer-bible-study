@@ -1,4 +1,5 @@
 import type { Lesson } from '../types'
+import { IconBook, IconHeadphones, IconLightbulb } from './Icons'
 import { Quiz } from './Quiz'
 import { WordPuzzle } from './WordPuzzle'
 
@@ -9,13 +10,36 @@ interface DayViewProps {
   onAllLessons?: () => void
 }
 
+function audibleAsinFromUrl(url: string): string | null {
+  const match = url.match(/\/pd\/([A-Z0-9]+)/i)
+  return match ? match[1].toUpperCase() : null
+}
+
+function isAndroid(): boolean {
+  if (typeof navigator === 'undefined') return false
+  return /Android/i.test(navigator.userAgent)
+}
+
+function audibleOpenHref(webUrl: string): string {
+  const asin = audibleAsinFromUrl(webUrl)
+  if (!asin || !isAndroid()) return webUrl
+  const fallback = encodeURIComponent(webUrl)
+  return `intent://www.audible.com/pd/${asin}#Intent;scheme=https;package=com.audible.application;S.browser_fallback_url=${fallback};end`
+}
+
 export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
+  const reading = lesson.readingLinks[0]
+  const esvAudio =
+    lesson.audioLinks.find((l) => l.kind === 'esv-embed' || l.url.includes('esv.org/audio-player')) ??
+    lesson.audioLinks.find((l) => l.url && l.kind !== 'audible')
+  const audible = lesson.audioLinks.find((l) => l.kind === 'audible' || l.url.includes('audible.com'))
+
   return (
     <article className="day-view">
       {(onBack || badge) && (
         <div className="day-toolbar">
           {onBack && (
-            <button type="button" className="btn ghost" onClick={onBack}>
+            <button type="button" className="btn ghost big-ghost" onClick={onBack}>
               ← Back
             </button>
           )}
@@ -24,66 +48,110 @@ export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
       )}
 
       <header className="day-hero card">
-        <p className="day-meta">Day {lesson.dayNumber} · {lesson.scriptureReference}</p>
+        <p className="day-meta">
+          Day {lesson.dayNumber} · {lesson.scriptureReference}
+        </p>
         <h1 className="day-title">{lesson.title}</h1>
       </header>
 
-      <section className="card" aria-labelledby="reading-heading">
-        <h2 id="reading-heading">Read</h2>
-        <p className="muted">Open today&apos;s chapters on Bible Gateway (NIV).</p>
-        <ul className="link-list">
-          {lesson.readingLinks.map((link) => (
-            <li key={link.url}>
-              <a className="ext-link" href={link.url} target="_blank" rel="noopener noreferrer">
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+      {/* Step 1 — Read (one big button for the full passage) */}
+      <section className="card step-card" aria-labelledby="reading-heading">
+        <div className="step-heading">
+          <span className="step-num" aria-hidden="true">
+            1
+          </span>
+          <span className="step-icon" aria-hidden="true">
+            <IconBook />
+          </span>
+          <h2 id="reading-heading">Read</h2>
+        </div>
+        <p className="step-hint">Open today&apos;s four chapters in the Bible (NIV).</p>
+        {reading && (
+          <a
+            className="btn primary big read-btn"
+            href={reading.url}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconBook className="btn-icon" />
+            {reading.label}
+          </a>
+        )}
       </section>
 
-      <section className="card" aria-labelledby="audio-heading">
-        <h2 id="audio-heading">Listen</h2>
-        <p className="muted">
-          Audio placeholders — add your own streaming or download URLs in{' '}
-          <code>src/data/lessons.json</code>.
-        </p>
-        <ul className="link-list">
-          {lesson.audioLinks.map((link, i) => (
-            <li key={i} className="audio-placeholder">
-              <span className="audio-label">{link.label}</span>
-              {link.url ? (
-                <a className="ext-link" href={link.url} target="_blank" rel="noopener noreferrer">
-                  Play / stream
-                </a>
-              ) : (
-                <span className="muted small">URL not set yet</span>
-              )}
-              {link.downloadUrl ? (
-                <a className="ext-link" href={link.downloadUrl} target="_blank" rel="noopener noreferrer">
-                  Download
-                </a>
-              ) : null}
-            </li>
-          ))}
-        </ul>
+      {/* Step 2 — Listen (in-browser ESV player for the four-chapter span) */}
+      <section className="card step-card" aria-labelledby="audio-heading">
+        <div className="step-heading">
+          <span className="step-num" aria-hidden="true">
+            2
+          </span>
+          <span className="step-icon" aria-hidden="true">
+            <IconHeadphones />
+          </span>
+          <h2 id="audio-heading">Listen</h2>
+        </div>
+        <p className="step-hint">Play the day&apos;s chapters right here.</p>
+
+        {esvAudio?.url ? (
+          <div className="esv-player-wrap">
+            <iframe
+              className="esv-player"
+              src={esvAudio.url}
+              title={esvAudio.label || 'Bible audio player'}
+              loading="lazy"
+              allow="autoplay"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+        ) : (
+          <p className="step-hint">Audio player coming soon.</p>
+        )}
+
+        {audible?.url && (
+          <div className="audible-secondary">
+            <a className="btn secondary big audible-btn" href={audibleOpenHref(audible.url)}>
+              <IconHeadphones className="btn-icon" />
+              Open Audible
+            </a>
+            <p className="step-hint listen-instruction">
+              Opens Audible. Then tap Library and choose Acts.
+            </p>
+            <a
+              className="web-backup-link"
+              href={audible.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Or open Audible in your web browser
+            </a>
+          </div>
+        )}
       </section>
 
-      <section className="card lesson-text" aria-labelledby="lesson-heading">
-        <h2 id="lesson-heading">Lesson</h2>
+      {/* Step 3 — Learn */}
+      <section className="card step-card lesson-text" aria-labelledby="lesson-heading">
+        <div className="step-heading">
+          <span className="step-num" aria-hidden="true">
+            3
+          </span>
+          <span className="step-icon" aria-hidden="true">
+            <IconLightbulb />
+          </span>
+          <h2 id="lesson-heading">Learn</h2>
+        </div>
         {lesson.lesson.map((para, i) => (
           <p key={i}>{para}</p>
         ))}
       </section>
 
-      <WordPuzzle puzzle={lesson.wordPuzzle} lessonId={lesson.id} />
+      <WordPuzzle puzzle={lesson.wordPuzzle} lessonId={lesson.id} stepNumber={4} />
 
-      <Quiz questions={lesson.questions} lessonId={lesson.id} />
+      <Quiz questions={lesson.questions} lessonId={lesson.id} stepNumber={5} />
 
       {onAllLessons && (
         <p className="day-footer-nav">
-          <button type="button" className="btn secondary" onClick={onAllLessons}>
-            Browse all lessons
+          <button type="button" className="btn secondary big" onClick={onAllLessons}>
+            All lessons
           </button>
         </p>
       )}

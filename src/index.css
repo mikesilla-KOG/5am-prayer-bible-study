@@ -9,7 +9,7 @@
   --ink: #f5efe6;
   --cream: #f8f1e3;
   --ivory: #efe6d5;
-  --muted: #b9aec8;
+  --muted: #c4b8d4;
   --gold: #d4af37;
   --gold-bright: #f0d78c;
   --gold-soft: rgba(212, 175, 55, 0.18);
@@ -20,15 +20,17 @@
   --success-bg: rgba(46, 120, 85, 0.35);
   --danger: #f0a090;
   --danger-bg: rgba(122, 47, 69, 0.45);
-  --line: rgba(212, 175, 55, 0.22);
+  --line: rgba(212, 175, 55, 0.28);
   --shadow: 0 12px 40px rgba(5, 2, 18, 0.45);
   --glow-gold: 0 0 24px rgba(212, 175, 55, 0.35);
   --radius: 18px;
-  --radius-sm: 12px;
+  --radius-sm: 14px;
   --font-sans: 'Source Sans 3', system-ui, sans-serif;
   --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
-  --tap: 48px;
-  --max: 430px;
+  --tap: 56px;
+  --max: 480px;
+  --text-base: 1.125rem;
+  --text-lead: 1.2rem;
 }
 
 *,
@@ -39,12 +41,14 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  font-size: 18px;
 }
 
 body {
   margin: 0;
   min-height: 100dvh;
   font-family: var(--font-sans);
+  font-size: var(--text-base);
   color: var(--ink);
   background:
     radial-gradient(ellipse 900px 500px at 50% -8%, rgba(90, 50, 140, 0.55) 0%, transparent 60%),
@@ -52,7 +56,7 @@ body {
     radial-gradient(ellipse 500px 350px at 0% 80%, rgba(42, 27, 85, 0.8) 0%, transparent 55%),
     linear-gradient(180deg, #1a1035 0%, #0f0a1f 100%);
   background-attachment: fixed;
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 button,
@@ -69,15 +73,6 @@ button {
 
 a {
   color: var(--gold-bright);
-}
-
-code {
-  font-size: 0.88em;
-  background: rgba(255, 255, 255, 0.06);
-  color: var(--champagne);
-  padding: 0.12em 0.4em;
-  border-radius: 6px;
-  border: 1px solid var(--line);
 }
 
 #root {

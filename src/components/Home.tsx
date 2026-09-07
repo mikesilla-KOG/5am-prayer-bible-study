@@ -2,7 +2,7 @@ import config from '../data/config.json'
 import type { Lesson } from '../types'
 import type { PlanStatus } from '../utils/schedule'
 import { formatDisplayDate, toLocalISODate } from '../utils/schedule'
-import { DayView } from './DayView'
+import { IconBook, IconChevron } from './Icons'
 
 interface HomeProps {
   status: PlanStatus
@@ -17,12 +17,12 @@ export function Home({ status, lesson, totalDays, onOpenDay, onAllLessons }: Hom
 
   if (status.kind === 'complete') {
     return (
-      <section className="home-complete">
+      <section className="home">
         <div className="card celebrate-card">
           <p className="day-meta">{todayLabel}</p>
           <h1>Study complete</h1>
-          <p>{config.completionMessage}</p>
-          <button type="button" className="btn primary" onClick={onAllLessons}>
+          <p className="lead">{config.completionMessage}</p>
+          <button type="button" className="btn primary big" onClick={onAllLessons}>
             Review all lessons
           </button>
         </div>
@@ -34,40 +34,54 @@ export function Home({ status, lesson, totalDays, onOpenDay, onAllLessons }: Hom
     return (
       <section className="card">
         <h1>Lesson not found</h1>
-        <button type="button" className="btn secondary" onClick={onAllLessons}>
+        <button type="button" className="btn secondary big" onClick={onAllLessons}>
           All lessons
         </button>
       </section>
     )
   }
 
-  const badge =
+  const dayLabel =
     status.kind === 'before'
-      ? `Plan starts ${formatDisplayDate(config.planStartDate)} · showing Day 1`
-      : `Today · Day ${status.dayNumber} of ${totalDays}`
+      ? `Day 1 of ${totalDays}`
+      : `Day ${status.dayNumber} of ${totalDays}`
 
   return (
     <div className="home">
       {status.kind === 'before' && (
         <p className="banner info">
-          The plan begins {formatDisplayDate(config.planStartDate)}. Until then, start with Day 1 whenever
-          you are ready.
+          The plan begins {formatDisplayDate(config.planStartDate)}. You can start Day 1 anytime.
         </p>
       )}
-      <DayView lesson={lesson} badge={badge} onAllLessons={onAllLessons} />
-      {status.kind === 'active' && status.dayNumber > 1 && (
-        <p className="catch-up muted center">
-          Behind?{' '}
-          <button type="button" className="text-link" onClick={() => onOpenDay(status.dayNumber - 1)}>
-            Open Day {status.dayNumber - 1}
-          </button>{' '}
-          or{' '}
-          <button type="button" className="text-link" onClick={onAllLessons}>
-            browse all days
-          </button>
-          .
+
+      <section className="card today-card" aria-labelledby="today-heading">
+        <p className="day-meta">Today&apos;s lesson</p>
+        <p className="today-day-label">{dayLabel}</p>
+        <h1 id="today-heading" className="today-title">
+          {lesson.title}
+        </h1>
+        <p className="today-ref">
+          <IconBook className="inline-icon" />
+          {lesson.scriptureReference}
         </p>
-      )}
+        <button
+          type="button"
+          className="btn primary big start-btn"
+          onClick={() => onOpenDay(lesson.dayNumber)}
+        >
+          Start lesson
+        </button>
+      </section>
+
+      <section className="all-lessons-teaser" aria-labelledby="all-heading">
+        <h2 id="all-heading" className="section-label">
+          All lessons
+        </h2>
+        <button type="button" className="all-lessons-btn" onClick={onAllLessons}>
+          <span>See all {totalDays} days</span>
+          <IconChevron />
+        </button>
+      </section>
     </div>
   )
 }
