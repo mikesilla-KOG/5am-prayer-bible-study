@@ -36,8 +36,8 @@
     ],
     "wordPuzzle": {
       "targetWords": [
-        "SPIRIT",
-        "WITNESS",
+        "POWER",
+        "TELL",
         "PRAY",
         "FIRE"
       ],
@@ -50,12 +50,11 @@
         "E",
         "F",
         "I",
-        "I",
-        "N",
+        "L",
+        "L",
+        "O",
         "P",
         "R",
-        "S",
-        "S",
         "T",
         "W",
         "Y"
@@ -393,7 +392,7 @@
       "targetWords": [
         "STONE",
         "JOY",
-        "GOSPEL",
+        "NEWS",
         "WATER"
       ],
       "featuredVerse": {
@@ -403,12 +402,9 @@
       "letters": [
         "A",
         "E",
-        "G",
         "J",
-        "L",
         "N",
         "O",
-        "P",
         "R",
         "S",
         "T",
@@ -512,7 +508,7 @@
       "targetWords": [
         "LIGHT",
         "CLEAN",
-        "VISION",
+        "DREAM",
         "GRACE"
       ],
       "featuredVerse": {
@@ -522,18 +518,16 @@
       "letters": [
         "A",
         "C",
+        "D",
         "E",
         "G",
         "H",
         "I",
-        "I",
         "L",
+        "M",
         "N",
-        "O",
         "R",
-        "S",
-        "T",
-        "V"
+        "T"
       ]
     },
     "questions": [
@@ -632,7 +626,7 @@
       "targetWords": [
         "PRAY",
         "ANGEL",
-        "CHURCH",
+        "DOOR",
         "GIFT"
       ],
       "featuredVerse": {
@@ -641,20 +635,18 @@
       },
       "letters": [
         "A",
-        "C",
-        "C",
+        "D",
         "E",
         "F",
         "G",
-        "H",
-        "H",
         "I",
         "L",
         "N",
+        "O",
+        "O",
         "P",
         "R",
         "T",
-        "U",
         "Y"
       ]
     },
@@ -991,9 +983,9 @@
     ],
     "wordPuzzle": {
       "targetWords": [
-        "REPENT",
+        "TURN",
         "WORD",
-        "REASON",
+        "READ",
         "TENT"
       ],
       "featuredVerse": {
@@ -1004,14 +996,12 @@
         "A",
         "D",
         "E",
-        "E",
         "N",
         "O",
-        "P",
         "R",
-        "S",
         "T",
         "T",
+        "U",
         "W"
       ]
     },
@@ -1230,7 +1220,7 @@
       "targetWords": [
         "READY",
         "NAME",
-        "TEMPLE",
+        "CROWD",
         "MOB"
       ],
       "featuredVerse": {
@@ -1240,16 +1230,14 @@
       "letters": [
         "A",
         "B",
+        "C",
         "D",
         "E",
-        "E",
-        "L",
         "M",
         "N",
         "O",
-        "P",
         "R",
-        "T",
+        "W",
         "Y"
       ]
     },
@@ -1464,8 +1452,8 @@
     "wordPuzzle": {
       "targetWords": [
         "LIGHT",
-        "VISION",
-        "APPEAL",
+        "OBEY",
+        "ROME",
         "KING"
       ],
       "featuredVerse": {
@@ -1473,22 +1461,19 @@
         "text": "So then, King Agrippa, I was not disobedient to the vision from heaven."
       },
       "letters": [
-        "A",
-        "A",
+        "B",
         "E",
         "G",
         "H",
         "I",
-        "I",
         "K",
         "L",
+        "M",
         "N",
         "O",
-        "P",
-        "P",
-        "S",
+        "R",
         "T",
-        "V"
+        "Y"
       ]
     },
     "questions": [
@@ -1588,7 +1573,7 @@
         "STORM",
         "SAFE",
         "BOLD",
-        "ISLAND"
+        "MALTA"
       ],
       "featuredVerse": {
         "reference": "Acts 28:31",
@@ -1596,14 +1581,13 @@
       },
       "letters": [
         "A",
+        "A",
         "B",
         "D",
         "E",
         "F",
-        "I",
         "L",
         "M",
-        "N",
         "O",
         "R",
         "S",

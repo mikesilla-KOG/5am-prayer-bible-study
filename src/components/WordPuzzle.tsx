@@ -38,7 +38,7 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
   const arranged = order.map((id) => tiles[id])
   const currentWord = selected.map((id) => tiles[id].char).join('')
   const complete = found.length === puzzle.targetWords.length
-  const progress = `${found.length} of ${puzzle.targetWords.length}`
+  const total = puzzle.targetWords.length
 
   function toggleTile(id: number) {
     if (complete) return
@@ -93,18 +93,48 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
           <IconPuzzle />
         </span>
         <h2 id={`puzzle-${lessonId}`}>Word puzzle</h2>
-        <p className="puzzle-progress" aria-live="polite">
-          {progress}
-        </p>
       </div>
+
+      <div className="puzzle-progress-block" aria-live="polite">
+        <p className="puzzle-progress-text">
+          Words found: {found.length} of {total}
+        </p>
+        <p className="puzzle-progress-legend">
+          Each circle is one word to find. Filled = found.
+        </p>
+        <div
+          className="progress-dots"
+          role="list"
+          aria-label={`Progress: ${found.length} of ${total} words found`}
+        >
+          {puzzle.targetWords.map((w, i) => {
+            const isFound = found.includes(w)
+            return (
+              <span
+                key={w}
+                role="listitem"
+                className={`progress-dot ${isFound ? 'filled' : 'empty'}`}
+                title={isFound ? `Found: ${w}` : `Word ${i + 1} not found yet`}
+                aria-label={isFound ? `Word ${i + 1} found: ${w}` : `Word ${i + 1} not found yet`}
+              />
+            )
+          })}
+        </div>
+        {found.length > 0 && (
+          <p className="found-words-plain">
+            Found so far: {found.join(', ')}
+          </p>
+        )}
+      </div>
+
       <p className="step-hint puzzle-hint">Tap letters to spell the words.</p>
 
-      <div className="found-words" aria-label="Words found">
+      <div className="found-words" aria-label="Word slots">
         {puzzle.targetWords.map((w) => {
           const isFound = found.includes(w)
           return (
             <span key={w} className={`found-chip ${isFound ? 'revealed' : 'hidden'}`}>
-              {isFound ? w : '•'.repeat(Math.min(w.length, 8))}
+              {isFound ? w : '•'.repeat(Math.min(w.length, 5))}
             </span>
           )
         })}

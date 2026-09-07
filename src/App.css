@@ -543,6 +543,63 @@
   white-space: nowrap;
 }
 
+.puzzle-progress-block {
+  margin: 4px 0 14px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  background: rgba(0, 0, 0, 0.22);
+  border: 1px solid var(--line);
+}
+
+.puzzle-progress-text {
+  margin: 0 0 4px;
+  font-weight: 700;
+  color: var(--gold);
+  font-size: 1.15rem;
+}
+
+.puzzle-progress-legend {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.progress-dots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.progress-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(212, 175, 55, 0.55);
+  background: transparent;
+  box-sizing: border-box;
+}
+
+.progress-dot.filled {
+  background: linear-gradient(135deg, var(--gold-bright), var(--gold));
+  border-color: var(--gold-bright);
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+}
+
+.progress-dot.empty {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.found-words-plain {
+  margin: 4px 0 0;
+  color: var(--cream);
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
 .puzzle-hint {
   margin-bottom: 16px;
 }
