@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# temporarily omit workflow until PAT has workflow scope
+.github/workflows/
