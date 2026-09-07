@@ -37,6 +37,7 @@ export interface Lesson {
   scriptureReference: string
   readingLinks: ReadingLink[]
   audioLinks: AudioLink[]
+  /** Short Learn bullets (5th-grade reading level; 3–8 items). */
   lesson: string[]
   wordPuzzle: WordPuzzle
   questions: Question[]

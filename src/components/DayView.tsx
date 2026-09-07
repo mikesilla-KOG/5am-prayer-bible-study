@@ -139,9 +139,11 @@ export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
           </span>
           <h2 id="lesson-heading">Learn</h2>
         </div>
-        {lesson.lesson.map((para, i) => (
-          <p key={i}>{para}</p>
-        ))}
+        <ul className="lesson-bullets">
+          {lesson.lesson.map((bullet, i) => (
+            <li key={i}>{bullet}</li>
+          ))}
+        </ul>
       </section>
 
       <WordPuzzle puzzle={lesson.wordPuzzle} lessonId={lesson.id} stepNumber={4} />
