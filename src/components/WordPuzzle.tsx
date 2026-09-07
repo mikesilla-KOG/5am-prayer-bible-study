@@ -30,6 +30,7 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
   )
 
   const [order] = useState(() => shuffle(tiles.map((t) => t.id)))
+  /** Ordered tile ids forming the current word; same id may appear more than once (reuse). */
   const [selected, setSelected] = useState<number[]>([])
   const [found, setFound] = useState<string[]>([])
   const [feedback, setFeedback] = useState<'idle' | 'ok' | 'miss'>('idle')
@@ -40,16 +41,17 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
   const complete = found.length === puzzle.targetWords.length
   const total = puzzle.targetWords.length
 
-  function toggleTile(id: number) {
+  function tapTile(id: number) {
     if (complete) return
     setFeedback('idle')
-    setSelected((prev) => {
-      if (prev.includes(id)) {
-        const idx = prev.indexOf(id)
-        return prev.slice(0, idx)
-      }
-      return [...prev, id]
-    })
+    // Always append so letters can be reused within a word (e.g. PEER, TRUTH, COOK).
+    setSelected((prev) => [...prev, id])
+  }
+
+  function backspace() {
+    if (complete) return
+    setFeedback('idle')
+    setSelected((prev) => prev.slice(0, -1))
   }
 
   function clearSelection() {
@@ -81,7 +83,12 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
   }
 
   const n = arranged.length
-  const radius = Math.min(148, 56 + n * 5.5)
+  // Comfortable ring for ≤5 large tiles
+  const radius = n <= 5 ? 108 : Math.min(148, 56 + n * 5.5)
+
+  function useCount(id: number) {
+    return selected.filter((s) => s === id).length
+  }
 
   return (
     <section className="word-puzzle card step-card" aria-labelledby={`puzzle-${lessonId}`}>
@@ -127,7 +134,9 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
         )}
       </div>
 
-      <p className="step-hint puzzle-hint">Tap letters to spell the words.</p>
+      <p className="step-hint puzzle-hint">
+        Tap letters to spell the words. You can use the same letter more than once.
+      </p>
 
       <div className="found-words" aria-label="Word slots">
         {puzzle.targetWords.map((w) => {
@@ -145,8 +154,8 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
       </div>
 
       <div
-        className="letter-circle"
-        style={{ width: radius * 2 + 72, height: radius * 2 + 72 }}
+        className={`letter-circle ${n <= 5 ? 'letter-circle--few' : ''}`}
+        style={{ width: radius * 2 + 88, height: radius * 2 + 88 }}
         role="group"
         aria-label="Letter circle"
       >
@@ -154,26 +163,26 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
           const angle = (i / n) * 2 * Math.PI - Math.PI / 2
           const x = Math.cos(angle) * radius
           const y = Math.sin(angle) * radius
-          const isSelected = selected.includes(tile.id)
-          const selIndex = selected.indexOf(tile.id)
+          const count = useCount(tile.id)
+          const isSelected = count > 0
           return (
             <button
               key={tile.id}
               type="button"
-              className={`letter-tile ${isSelected ? 'selected' : ''}`}
+              className={`letter-tile ${isSelected ? 'selected' : ''} ${n <= 5 ? 'letter-tile--large' : ''}`}
               style={
                 {
                   ['--tx']: `${x}px`,
                   ['--ty']: `${y}px`,
                 } as CSSProperties
               }
-              onClick={() => toggleTile(tile.id)}
+              onClick={() => tapTile(tile.id)}
               disabled={complete}
               aria-pressed={isSelected}
-              aria-label={`Letter ${tile.char}${isSelected ? `, selected ${selIndex + 1}` : ''}`}
+              aria-label={`Letter ${tile.char}${isSelected ? `, used ${count} time${count === 1 ? '' : 's'}` : ''}`}
             >
               {tile.char}
-              {isSelected && <span className="sel-badge">{selIndex + 1}</span>}
+              {isSelected && <span className="sel-badge">{count}</span>}
             </button>
           )
         })}
@@ -181,6 +190,14 @@ export function WordPuzzle({ puzzle, lessonId, stepNumber = 4 }: WordPuzzleProps
       </div>
 
       <div className="puzzle-actions">
+        <button
+          type="button"
+          className="btn secondary"
+          onClick={backspace}
+          disabled={!selected.length || complete}
+        >
+          Backspace
+        </button>
         <button
           type="button"
           className="btn secondary"
