@@ -143,7 +143,7 @@ export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
             <h2 id="watch-heading">Watch Acts 1</h2>
           </div>
           <p className="step-hint">
-            Stick-figure walkthrough of Acts 1 (KJV) — watch while the verses are read to stay focused. A little funny on purpose.
+            Colorful stick-figure walkthrough of Acts 1 (KJV) — short animated scenes with scripture captions. Watch while the verses are read to stay focused.
           </p>
           <div className="stick-video-wrap">
             <video
