@@ -33,6 +33,9 @@ export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
     lesson.audioLinks.find((l) => l.kind === 'esv-embed' || l.url.includes('esv.org/audio-player')) ??
     lesson.audioLinks.find((l) => l.url && l.kind !== 'audible')
   const audible = lesson.audioLinks.find((l) => l.kind === 'audible' || l.url.includes('audible.com'))
+  const stickVideo = lesson.stickFigureVideo
+    ? `${import.meta.env.BASE_URL}${lesson.stickFigureVideo.replace(/^\/+/, '')}`
+    : null
 
   return (
     <article className="day-view">
@@ -127,6 +130,34 @@ export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
           </div>
         )}
       </section>
+
+      {stickVideo && (
+        <section className="card step-card" aria-labelledby="watch-heading">
+          <div className="step-heading">
+            <span className="step-num" aria-hidden="true">
+              ★
+            </span>
+            <span className="step-icon" aria-hidden="true">
+              <IconLightbulb />
+            </span>
+            <h2 id="watch-heading">Watch Acts 1</h2>
+          </div>
+          <p className="step-hint">
+            Stick-figure walkthrough of Acts 1 (KJV) — watch while the verses are read to stay focused. A little funny on purpose.
+          </p>
+          <div className="stick-video-wrap">
+            <video
+              className="stick-video"
+              controls
+              playsInline
+              preload="metadata"
+              src={stickVideo}
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </section>
+      )}
 
       {/* Step 3 — Learn */}
       <section className="card step-card lesson-text" aria-labelledby="lesson-heading">

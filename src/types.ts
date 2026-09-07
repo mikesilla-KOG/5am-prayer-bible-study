@@ -41,6 +41,8 @@ export interface Lesson {
   lesson: string[]
   wordPuzzle: WordPuzzle
   questions: Question[]
+  /** Optional stick-figure focus video path under public/ (Day 1 Acts 1). */
+  stickFigureVideo?: string
 }
 
 export interface AppConfig {
