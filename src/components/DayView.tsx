@@ -65,7 +65,7 @@ export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
           </span>
           <h2 id="reading-heading">Read</h2>
         </div>
-        <p className="step-hint">Open today&apos;s four chapters in the Bible (NIV).</p>
+        <p className="step-hint">Open today&apos;s two chapters in the Bible (NIV).</p>
         {reading && (
           <a
             className="btn primary big read-btn"
@@ -79,7 +79,7 @@ export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
         )}
       </section>
 
-      {/* Step 2 — Listen (in-browser ESV player for the four-chapter span) */}
+      {/* Step 2 — Listen (in-browser ESV player for the two-chapter span) */}
       <section className="card step-card" aria-labelledby="audio-heading">
         <div className="step-heading">
           <span className="step-num" aria-hidden="true">

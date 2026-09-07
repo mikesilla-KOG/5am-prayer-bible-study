@@ -1,27 +1,39 @@
 [
   {
-    "id": "acts-01-04",
+    "id": "acts-01-02",
     "dayNumber": 1,
-    "title": "The Spirit Comes: Witness Begins",
-    "scriptureReference": "Acts 1–4",
+    "title": "Promise, Prayer, and Pentecost",
+    "scriptureReference": "Acts 1–2",
     "readingLinks": [
       {
-        "label": "Read Acts 1–4",
-        "url": "https://www.biblegateway.com/passage/?search=Acts%201-4&version=NIV"
+        "label": "Read Acts 1–2",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%201-2&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 1–2",
+        "url": "https://www.esv.org/audio-player/Acts+1-2/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
+      },
+      {
+        "label": "Also on Audible",
+        "url": "https://www.audible.com/pd/B003UC45I8",
+        "downloadUrl": "",
+        "kind": "audible"
       }
     ],
     "lesson": [
       "Luke opens Acts with Jesus’ forty days of appearances and a clear commission: wait in Jerusalem for the Holy Spirit, then be witnesses in Jerusalem, Judea and Samaria, and to the ends of the earth. After the ascension, about 120 believers devote themselves to prayer, and Matthias is chosen to replace Judas among the apostles.",
-      "At Pentecost the Spirit fills the disciples with wind-and-fire power. Peter proclaims the crucified and risen Christ; about three thousand repent, are baptized, and devote themselves to teaching, fellowship, breaking of bread, and prayer. The church’s life is Word, community, worship, and prayer—and the Lord adds to their number daily.",
-      "At the Beautiful Gate, Peter heals a man lame from birth in Jesus’ name and calls Israel to repent. Arrested for preaching the resurrection, Peter tells the Sanhedrin that salvation is found in no other name. The church prays for boldness; the place is shaken, they speak God’s word boldly, and share so that none among them are needy."
+      "At Pentecost the Spirit fills the disciples with wind-and-fire power. Peter proclaims the crucified and risen Christ; about three thousand repent, are baptized, and devote themselves to the apostles’ teaching, fellowship, breaking of bread, and prayer. The church’s life is Word, community, worship, and prayer—and the Lord adds to their number daily."
     ],
     "wordPuzzle": {
       "targetWords": [
         "SPIRIT",
         "WITNESS",
         "PRAY",
-        "HEAL",
-        "BOLD"
+        "FIRE"
       ],
       "featuredVerse": {
         "reference": "Acts 1:8",
@@ -29,15 +41,11 @@
       },
       "letters": [
         "A",
-        "B",
-        "D",
         "E",
-        "H",
+        "F",
         "I",
         "I",
-        "L",
         "N",
-        "O",
         "P",
         "R",
         "S",
@@ -77,88 +85,180 @@
         "prompt": "About how many were added to the church on Pentecost?",
         "choices": [
           "120",
-          "500",
-          "About 3,000",
-          "10,000"
+          "About three thousand",
+          "Twelve",
+          "Seventy"
         ],
-        "correctIndex": 2,
-        "explanation": "About three thousand accepted the message and were baptized (Acts 2:41)."
+        "correctIndex": 1,
+        "explanation": "About three thousand were added that day (Acts 2:41)."
       },
       {
         "id": "d1q4",
-        "prompt": "In whose name did Peter heal the lame man at the temple gate?",
+        "prompt": "Who was chosen to replace Judas among the apostles?",
         "choices": [
-          "Moses",
-          "Abraham",
-          "Jesus Christ of Nazareth",
-          "His own"
+          "Barnabas",
+          "Matthias",
+          "Stephen",
+          "Philip"
         ],
-        "correctIndex": 2,
-        "explanation": "“In the name of Jesus Christ of Nazareth, walk” (Acts 3:6)."
+        "correctIndex": 1,
+        "explanation": "Lots were cast and Matthias was added to the eleven apostles (Acts 1:26)."
       },
       {
         "id": "d1q5",
-        "prompt": "Peter told the Sanhedrin that salvation is found:",
+        "prompt": "What did the early believers devote themselves to after Pentecost?",
         "choices": [
-          "In the temple alone",
-          "In no one else but Jesus",
-          "In Moses’ law only",
-          "In Roman citizenship"
+          "Temple building projects",
+          "The apostles’ teaching, fellowship, breaking of bread, and prayer",
+          "Roman citizenship classes",
+          "Leaving Jerusalem immediately"
         ],
         "correctIndex": 1,
-        "explanation": "Salvation is found in no one else; there is no other name by which we must be saved (Acts 4:12)."
-      },
-      {
-        "id": "d1q6",
-        "prompt": "After release, the believers prayed especially for:",
-        "choices": [
-          "Wealth",
-          "Boldness to speak God’s word",
-          "Revenge",
-          "A new building"
-        ],
-        "correctIndex": 1,
-        "explanation": "They asked God to enable them to speak His word with great boldness (Acts 4:29–31)."
-      }
-    ],
-    "audioLinks": [
-      {
-        "label": "Listen to Acts 1–4",
-        "url": "https://www.esv.org/audio-player/Acts+1-4/",
-        "downloadUrl": "",
-        "kind": "esv-embed"
-      },
-      {
-        "label": "Also on Audible",
-        "url": "https://www.audible.com/pd/B003UC45I8",
-        "downloadUrl": "",
-        "kind": "audible"
+        "explanation": "Acts 2:42 names teaching, fellowship, breaking of bread, and prayer."
       }
     ]
   },
   {
-    "id": "acts-05-08",
+    "id": "acts-03-04",
     "dayNumber": 2,
-    "title": "Integrity, Stephen, and a Spreading Gospel",
-    "scriptureReference": "Acts 5–8",
+    "title": "Healing, Boldness, and Shared Life",
+    "scriptureReference": "Acts 3–4",
     "readingLinks": [
       {
-        "label": "Read Acts 5–8",
-        "url": "https://www.biblegateway.com/passage/?search=Acts%205-8&version=NIV"
+        "label": "Read Acts 3–4",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%203-4&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 3–4",
+        "url": "https://www.esv.org/audio-player/Acts+3-4/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
       }
     ],
     "lesson": [
-      "Ananias and Sapphira’s lie about their gift brings sudden judgment and holy fear. The apostles heal many, are imprisoned, freed by an angel, and tell the council, “We must obey God rather than human beings.” Gamaliel warns that if the movement is of God it cannot be stopped; the apostles rejoice to suffer for the Name and keep teaching.",
-      "Seven Spirit-filled servants—including Stephen and Philip—are chosen so widows are cared for and the Word keeps spreading. Stephen’s bold retelling of Israel’s story ends with a vision of Jesus at God’s right hand. He is stoned, praying forgiveness for his killers, as Saul looks on.",
-      "Persecution scatters believers who preach wherever they go. Philip brings joy to Samaria; Simon learns God’s gift cannot be bought. On a desert road Philip explains Isaiah 53 to an Ethiopian official, baptizes him, and the gospel crosses new borders."
+      "At the Beautiful Gate, Peter heals a man lame from birth in Jesus’ name. The crowd gathers, and Peter calls Israel to repent and turn to God so that times of refreshing may come from the Lord. The miracle points beyond the apostles to the risen Jesus, the Holy and Righteous One.",
+      "Arrested for preaching the resurrection, Peter tells the Sanhedrin that salvation is found in no other name under heaven. The rulers command silence, but Peter and John answer that they must speak what they have seen and heard. The church prays for boldness; the place is shaken, they speak God’s word boldly, and share so that none among them are needy."
+    ],
+    "wordPuzzle": {
+      "targetWords": [
+        "HEAL",
+        "BOLD",
+        "NAME",
+        "PRAY"
+      ],
+      "featuredVerse": {
+        "reference": "Acts 4:12",
+        "text": "Salvation is found in no one else, for there is no other name under heaven given to mankind by which we must be saved."
+      },
+      "letters": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "H",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "R",
+        "Y"
+      ]
+    },
+    "questions": [
+      {
+        "id": "d2q1",
+        "prompt": "Where was the lame man healed?",
+        "choices": [
+          "By the Jordan",
+          "At the temple gate called Beautiful",
+          "In Caesarea",
+          "On the Mount of Olives"
+        ],
+        "correctIndex": 1,
+        "explanation": "Peter and John met him at the temple gate called Beautiful (Acts 3:2)."
+      },
+      {
+        "id": "d2q2",
+        "prompt": "In whose name did Peter heal the lame man?",
+        "choices": [
+          "Moses",
+          "Abraham",
+          "Jesus Christ of Nazareth",
+          "John the Baptist"
+        ],
+        "correctIndex": 2,
+        "explanation": "Peter said, “In the name of Jesus Christ of Nazareth, walk” (Acts 3:6)."
+      },
+      {
+        "id": "d2q3",
+        "prompt": "According to Peter, in what name is salvation found?",
+        "choices": [
+          "No other name under heaven",
+          "Caesar’s name",
+          "The temple’s name",
+          "Any prophet’s name"
+        ],
+        "correctIndex": 0,
+        "explanation": "Acts 4:12: there is no other name under heaven by which we must be saved."
+      },
+      {
+        "id": "d2q4",
+        "prompt": "What did the believers pray for after Peter and John were released?",
+        "choices": [
+          "Wealth",
+          "Boldness to speak God’s word",
+          "Revenge",
+          "Escape from Jerusalem"
+        ],
+        "correctIndex": 1,
+        "explanation": "They asked God to enable them to speak his word with great boldness (Acts 4:29)."
+      },
+      {
+        "id": "d2q5",
+        "prompt": "How did the early church care for needs among them?",
+        "choices": [
+          "They ignored the poor",
+          "They shared so that there were no needy persons among them",
+          "Only the apostles kept money",
+          "They charged fees for healing"
+        ],
+        "correctIndex": 1,
+        "explanation": "Believers shared possessions; there were no needy persons among them (Acts 4:34–35)."
+      }
+    ]
+  },
+  {
+    "id": "acts-05-06",
+    "dayNumber": 3,
+    "title": "Integrity, Arrest, and Servant Leaders",
+    "scriptureReference": "Acts 5–6",
+    "readingLinks": [
+      {
+        "label": "Read Acts 5–6",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%205-6&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 5–6",
+        "url": "https://www.esv.org/audio-player/Acts+5-6/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
+      }
+    ],
+    "lesson": [
+      "Ananias and Sapphira lie about their gift and fall under God’s judgment—a sobering reminder that the Spirit will not be mocked. Signs and wonders continue through the apostles; crowds bring the sick, and even Peter’s shadow is sought for healing. Arrested again, the apostles are freed by an angel and told to keep teaching in the temple courts.",
+      "Before the Sanhedrin, Peter insists, “We must obey God rather than human beings.” Gamaliel urges caution, and the apostles rejoice that they were counted worthy to suffer for the Name. As the church grows, seven Spirit-filled servants—including Stephen and Philip—are chosen so the apostles can devote themselves to prayer and the ministry of the word."
     ],
     "wordPuzzle": {
       "targetWords": [
         "OBEY",
         "SERVE",
-        "STONE",
-        "JOY",
-        "GOSPEL"
+        "TRUTH",
+        "WORD"
       ],
       "featuredVerse": {
         "reference": "Acts 5:29",
@@ -166,7 +266,120 @@
       },
       "letters": [
         "B",
+        "D",
         "E",
+        "E",
+        "H",
+        "O",
+        "R",
+        "S",
+        "T",
+        "T",
+        "U",
+        "V",
+        "W",
+        "Y"
+      ]
+    },
+    "questions": [
+      {
+        "id": "d3q1",
+        "prompt": "What was Ananias and Sapphira’s sin?",
+        "choices": [
+          "Refusing to give anything",
+          "Lying about how much of the sale they brought",
+          "Leaving Jerusalem",
+          "Worshiping idols"
+        ],
+        "correctIndex": 1,
+        "explanation": "They kept back part of the money and lied as if they had given all (Acts 5:1–4)."
+      },
+      {
+        "id": "d3q2",
+        "prompt": "What did Peter tell the Sanhedrin about obedience?",
+        "choices": [
+          "Obey rulers first",
+          "We must obey God rather than human beings",
+          "Stay silent in the temple",
+          "Only teach at night"
+        ],
+        "correctIndex": 1,
+        "explanation": "Acts 5:29 is the apostles’ clear reply."
+      },
+      {
+        "id": "d3q3",
+        "prompt": "How were the apostles freed after their arrest in Acts 5?",
+        "choices": [
+          "A bribe",
+          "An angel of the Lord opened the jail doors",
+          "A Roman pardon",
+          "They escaped by force"
+        ],
+        "correctIndex": 1,
+        "explanation": "An angel opened the doors and told them to keep teaching (Acts 5:19–20)."
+      },
+      {
+        "id": "d3q4",
+        "prompt": "Why were seven men chosen in Acts 6?",
+        "choices": [
+          "To replace the apostles",
+          "To serve neglected widows so the apostles could focus on prayer and the word",
+          "To collect taxes",
+          "To lead the Sanhedrin"
+        ],
+        "correctIndex": 1,
+        "explanation": "The Seven were appointed for daily food distribution while the apostles devoted themselves to prayer and the ministry of the word (Acts 6:1–4)."
+      },
+      {
+        "id": "d3q5",
+        "prompt": "Which of these men was among the seven chosen to serve?",
+        "choices": [
+          "Gamaliel",
+          "Stephen",
+          "Caiaphas",
+          "Herod"
+        ],
+        "correctIndex": 1,
+        "explanation": "Stephen, a man full of faith and the Holy Spirit, was among the seven (Acts 6:5)."
+      }
+    ]
+  },
+  {
+    "id": "acts-07-08",
+    "dayNumber": 4,
+    "title": "Stephen’s Witness and a Spreading Gospel",
+    "scriptureReference": "Acts 7–8",
+    "readingLinks": [
+      {
+        "label": "Read Acts 7–8",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%207-8&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 7–8",
+        "url": "https://www.esv.org/audio-player/Acts+7-8/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
+      }
+    ],
+    "lesson": [
+      "Stephen’s Spirit-filled defense retells Israel’s story and confronts resistance to God’s messengers. Seeing heaven opened and Jesus standing at God’s right hand, he is stoned. His dying prayer echoes Jesus: “Lord, do not hold this sin against them.” Saul watches approvingly as persecution scatters believers—and the gospel goes with them.",
+      "Philip proclaims Christ in Samaria; many believe, and there is great joy. Simon the sorcerer is rebuked for thinking the Spirit’s gift can be bought. On the desert road, Philip explains Isaiah to an Ethiopian official, baptizes him, and the man goes on his way rejoicing. Suffering does not stop the mission—it spreads it."
+    ],
+    "wordPuzzle": {
+      "targetWords": [
+        "STONE",
+        "JOY",
+        "GOSPEL",
+        "WATER"
+      ],
+      "featuredVerse": {
+        "reference": "Acts 8:4",
+        "text": "Those who had been scattered preached the word wherever they went."
+      },
+      "letters": [
+        "A",
         "E",
         "G",
         "J",
@@ -177,116 +390,102 @@
         "R",
         "S",
         "T",
-        "V",
+        "W",
         "Y"
       ]
     },
     "questions": [
       {
-        "id": "d2q1",
-        "prompt": "What was Ananias and Sapphira’s main sin?",
+        "id": "d4q1",
+        "prompt": "What did Stephen see as he was being killed?",
         "choices": [
-          "Selling land",
-          "Lying to the Holy Spirit about their gift",
-          "Attending synagogue",
-          "Helping the poor"
+          "Angels carrying him away",
+          "Heaven open and Jesus standing at God’s right hand",
+          "The temple falling",
+          "Saul repenting"
         ],
         "correctIndex": 1,
-        "explanation": "They kept back part of the money and lied to the Holy Spirit (Acts 5:1–4, 9)."
+        "explanation": "Stephen saw the Son of Man standing at the right hand of God (Acts 7:55–56)."
       },
       {
-        "id": "d2q2",
-        "prompt": "What principle did Peter state before the Sanhedrin?",
+        "id": "d4q2",
+        "prompt": "What happened after Stephen’s death?",
         "choices": [
-          "Obey rulers first",
-          "We must obey God rather than people",
-          "Stay silent",
-          "Flee the city"
+          "The church stopped meeting",
+          "A great persecution scattered believers, who preached the word wherever they went",
+          "Rome banned all travel",
+          "Only the apostles left Jerusalem"
         ],
         "correctIndex": 1,
-        "explanation": "“We must obey God rather than human beings” (Acts 5:29)."
+        "explanation": "Persecution scattered everyone except the apostles; the scattered preached the word (Acts 8:1–4)."
       },
       {
-        "id": "d2q3",
-        "prompt": "Why were seven men chosen in Acts 6?",
+        "id": "d4q3",
+        "prompt": "Where did Philip preach with great joy in the city?",
         "choices": [
-          "To replace apostles",
-          "To serve neglected widows fairly",
-          "To collect taxes",
-          "To build a synagogue"
+          "Athens",
+          "Samaria",
+          "Rome",
+          "Damascus"
         ],
         "correctIndex": 1,
-        "explanation": "Widows were overlooked in the daily distribution; seven were chosen to wait on tables (Acts 6:1–6)."
+        "explanation": "Philip went to a city in Samaria and proclaimed the Messiah (Acts 8:5–8)."
       },
       {
-        "id": "d2q4",
-        "prompt": "What did Stephen see as he was dying?",
+        "id": "d4q4",
+        "prompt": "What book was the Ethiopian official reading?",
         "choices": [
-          "Angels with swords",
-          "Jesus standing at God’s right hand",
-          "Moses frowning",
-          "An empty sky"
+          "Genesis",
+          "Isaiah",
+          "Psalms only",
+          "The Law of Moses only"
         ],
         "correctIndex": 1,
-        "explanation": "He saw the glory of God and Jesus standing at God’s right hand (Acts 7:55–56)."
+        "explanation": "He was reading Isaiah the prophet (Acts 8:28–30)."
       },
       {
-        "id": "d2q5",
-        "prompt": "What happened when persecution scattered the church?",
+        "id": "d4q5",
+        "prompt": "What did Philip do after explaining the good news about Jesus?",
         "choices": [
-          "They stopped talking about Jesus",
-          "They preached the word wherever they went",
-          "Only apostles evangelized",
-          "They returned to Judaism only"
+          "Sent the man back to Jerusalem",
+          "Baptized him",
+          "Took his chariot",
+          "Charged a fee"
         ],
         "correctIndex": 1,
-        "explanation": "Those who had been scattered preached the word wherever they went (Acts 8:4)."
-      },
-      {
-        "id": "d2q6",
-        "prompt": "After Philip explained Isaiah, the Ethiopian:",
-        "choices": [
-          "Rejected Jesus",
-          "Asked to be baptized",
-          "Hired Philip",
-          "Returned the scroll unread"
-        ],
-        "correctIndex": 1,
-        "explanation": "“Look, here is water. What can stand in the way of my being baptized?” (Acts 8:36–38)."
-      }
-    ],
-    "audioLinks": [
-      {
-        "label": "Listen to Acts 5–8",
-        "url": "https://www.esv.org/audio-player/Acts+5-8/",
-        "downloadUrl": "",
-        "kind": "esv-embed"
+        "explanation": "They stopped the chariot and Philip baptized him (Acts 8:36–38)."
       }
     ]
   },
   {
-    "id": "acts-09-12",
-    "dayNumber": 3,
-    "title": "Saul Converted; Gentiles Welcomed; Prayer Answered",
-    "scriptureReference": "Acts 9–12",
+    "id": "acts-09-10",
+    "dayNumber": 5,
+    "title": "Saul Converted; Gentiles Welcomed",
+    "scriptureReference": "Acts 9–10",
     "readingLinks": [
       {
-        "label": "Read Acts 9–12",
-        "url": "https://www.biblegateway.com/passage/?search=Acts%209-12&version=NIV"
+        "label": "Read Acts 9–10",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%209-10&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 9–10",
+        "url": "https://www.esv.org/audio-player/Acts+9-10/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
       }
     ],
     "lesson": [
-      "On the Damascus road Jesus stops Saul: “Why do you persecute me?” Blinded, then healed through obedient Ananias, Saul is baptized and immediately preaches that Jesus is the Son of God. Barnabas later vouches for him in Jerusalem. Peter heals Aeneas and raises Tabitha; many turn to the Lord.",
-      "Cornelius the Gentile centurion and Peter both receive visions. Peter learns not to call impure what God has made clean, preaches peace through Jesus—Lord of all—and the Spirit falls on the household while he is still speaking. They are baptized. God shows no favoritism.",
-      "In Antioch disciples are first called Christians; the church sends famine relief. Herod kills James and imprisons Peter, but the church prays earnestly and an angel leads Peter out. Herod dies after accepting worship; the word of God continues to spread and flourish."
+      "On the Damascus road a light from heaven stops Saul. The risen Jesus asks, “Why do you persecute me?” Blinded, Saul prays; Ananias lays hands on him, scales fall, and Saul is baptized. The persecutor becomes a preacher—speaking boldly in Damascus and later in Jerusalem, though many disciples still fear him.",
+      "In Caesarea, Cornelius the centurion receives a vision; in Joppa, Peter sees a sheet of unclean animals and hears, “Do not call anything impure that God has made clean.” Peter goes to Cornelius’s house, proclaims Jesus, and the Holy Spirit falls on Gentile hearers. They are baptized—God shows no favoritism, and the door to the nations swings open."
     ],
     "wordPuzzle": {
       "targetWords": [
         "LIGHT",
         "CLEAN",
-        "PRAY",
-        "ANGEL",
-        "CHRISTIAN"
+        "VISION",
+        "GRACE"
       ],
       "featuredVerse": {
         "reference": "Acts 10:34–35",
@@ -302,52 +501,132 @@
         "I",
         "L",
         "N",
-        "P",
+        "O",
         "R",
         "S",
         "T",
+        "V"
+      ]
+    },
+    "questions": [
+      {
+        "id": "d5q1",
+        "prompt": "What did Jesus ask Saul on the Damascus road?",
+        "choices": [
+          "Why are you traveling?",
+          "Saul, Saul, why do you persecute me?",
+          "Will you build a church?",
+          "Where is Ananias?"
+        ],
+        "correctIndex": 1,
+        "explanation": "Acts 9:4 records Jesus’ question to Saul."
+      },
+      {
+        "id": "d5q2",
+        "prompt": "Who laid hands on Saul so he could see again?",
+        "choices": [
+          "Peter",
+          "Ananias",
+          "Barnabas",
+          "Gamaliel"
+        ],
+        "correctIndex": 1,
+        "explanation": "The Lord sent Ananias to Saul in Damascus (Acts 9:10–18)."
+      },
+      {
+        "id": "d5q3",
+        "prompt": "What did Peter’s vision about unclean animals teach?",
+        "choices": [
+          "Only Jews may eat meat",
+          "Do not call impure what God has made clean—preparing him for Gentile mission",
+          "Avoid all travel",
+          "Leave fishing forever"
+        ],
+        "correctIndex": 1,
+        "explanation": "God’s word in the vision prepared Peter to welcome Gentiles (Acts 10:15, 28)."
+      },
+      {
+        "id": "d5q4",
+        "prompt": "Who was Cornelius?",
+        "choices": [
+          "A Pharisee in Jerusalem",
+          "A Roman centurion in Caesarea who feared God",
+          "A sorcerer in Samaria",
+          "An Ethiopian merchant"
+        ],
+        "correctIndex": 1,
+        "explanation": "Cornelius was a devout centurion in Caesarea (Acts 10:1–2)."
+      },
+      {
+        "id": "d5q5",
+        "prompt": "What happened while Peter was speaking at Cornelius’s house?",
+        "choices": [
+          "The Spirit fell on the Gentile hearers",
+          "Soldiers arrested Peter",
+          "The meeting was canceled",
+          "Only Jews believed"
+        ],
+        "correctIndex": 0,
+        "explanation": "The Holy Spirit came on all who heard the message (Acts 10:44–48)."
+      }
+    ]
+  },
+  {
+    "id": "acts-11-12",
+    "dayNumber": 6,
+    "title": "Antioch, Prayer, and a Prison Door",
+    "scriptureReference": "Acts 11–12",
+    "readingLinks": [
+      {
+        "label": "Read Acts 11–12",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2011-12&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 11–12",
+        "url": "https://www.esv.org/audio-player/Acts+11-12/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
+      }
+    ],
+    "lesson": [
+      "Peter explains God’s work among the Gentiles; the Jerusalem believers glorify God that even Gentiles have been granted repentance unto life. In Antioch, scattered believers preach to Greeks; a great number believe. Barnabas fetches Saul, and for a year they teach—disciples are first called Christians there. Agabus predicts famine, and the church sends relief.",
+      "Herod kills James and imprisons Peter. The church prays earnestly; an angel wakes Peter, chains fall, and the iron gate opens by itself. Rhoda’s joy at the door almost keeps Peter outside, but the praying church sees God’s answer. Herod’s pride ends in judgment, while the word of God continues to spread and flourish."
+    ],
+    "wordPuzzle": {
+      "targetWords": [
+        "PRAY",
+        "ANGEL",
+        "CHURCH",
+        "GIFT"
+      ],
+      "featuredVerse": {
+        "reference": "Acts 12:5",
+        "text": "So Peter was kept in prison, but the church was earnestly praying to God for him."
+      },
+      "letters": [
+        "A",
+        "C",
+        "C",
+        "E",
+        "F",
+        "G",
+        "H",
+        "H",
+        "I",
+        "L",
+        "N",
+        "P",
+        "R",
+        "T",
+        "U",
         "Y"
       ]
     },
     "questions": [
       {
-        "id": "d3q1",
-        "prompt": "By persecuting believers, Jesus said Saul was:",
-        "choices": [
-          "Helping the temple",
-          "Persecuting Jesus Himself",
-          "Obeying Moses",
-          "Serving Rome"
-        ],
-        "correctIndex": 1,
-        "explanation": "“Saul, Saul, why do you persecute me?” (Acts 9:4–5)."
-      },
-      {
-        "id": "d3q2",
-        "prompt": "What lesson did Peter’s vision teach?",
-        "choices": [
-          "Avoid all Gentiles forever",
-          "Do not call impure what God has made clean",
-          "Only eat vegetables",
-          "Leave Joppa"
-        ],
-        "correctIndex": 1,
-        "explanation": "“Do not call anything impure that God has made clean” (Acts 10:15)."
-      },
-      {
-        "id": "d3q3",
-        "prompt": "When did the Spirit fall on Cornelius’s household?",
-        "choices": [
-          "After a year of classes",
-          "While Peter was still speaking",
-          "Only after circumcision",
-          "Never"
-        ],
-        "correctIndex": 1,
-        "explanation": "While Peter was still speaking, the Holy Spirit came on all who heard (Acts 10:44)."
-      },
-      {
-        "id": "d3q4",
+        "id": "d6q1",
         "prompt": "Where were believers first called Christians?",
         "choices": [
           "Jerusalem",
@@ -359,58 +638,193 @@
         "explanation": "The disciples were called Christians first at Antioch (Acts 11:26)."
       },
       {
-        "id": "d3q5",
-        "prompt": "What was the church doing while Peter was in prison?",
+        "id": "d6q2",
+        "prompt": "How did the church respond when Peter was imprisoned?",
         "choices": [
-          "Sleeping",
-          "Earnestly praying",
-          "Negotiating only",
-          "Fleeing the city"
+          "They fled the city",
+          "They earnestly prayed to God for him",
+          "They paid a ransom",
+          "They stopped meeting"
         ],
         "correctIndex": 1,
-        "explanation": "The church was earnestly praying to God for him (Acts 12:5)."
+        "explanation": "Acts 12:5 highlights the church’s earnest prayer."
       },
       {
-        "id": "d3q6",
-        "prompt": "After Herod’s death, Luke notes that:",
+        "id": "d6q3",
+        "prompt": "Who helped Peter escape from prison?",
         "choices": [
-          "The church collapsed",
-          "The word of God continued to spread",
-          "Prayer stopped",
-          "Mission ended"
+          "Barnabas",
+          "An angel of the Lord",
+          "Rhoda alone",
+          "Herod’s guard"
         ],
         "correctIndex": 1,
-        "explanation": "But the word of God continued to spread and flourish (Acts 12:24)."
-      }
-    ],
-    "audioLinks": [
+        "explanation": "An angel woke Peter and led him out (Acts 12:7–10)."
+      },
       {
-        "label": "Listen to Acts 9–12",
-        "url": "https://www.esv.org/audio-player/Acts+9-12/",
-        "downloadUrl": "",
-        "kind": "esv-embed"
+        "id": "d6q4",
+        "prompt": "Which apostle did Herod put to death with the sword?",
+        "choices": [
+          "John",
+          "James the brother of John",
+          "Andrew",
+          "Matthias"
+        ],
+        "correctIndex": 1,
+        "explanation": "Herod had James, the brother of John, put to death (Acts 12:2)."
+      },
+      {
+        "id": "d6q5",
+        "prompt": "What did Antioch believers do when Agabus predicted famine?",
+        "choices": [
+          "Ignored the warning",
+          "Provided help for the brothers and sisters in Judea",
+          "Moved to Egypt",
+          "Stopped giving"
+        ],
+        "correctIndex": 1,
+        "explanation": "The disciples sent relief to Judea by Barnabas and Saul (Acts 11:28–30)."
       }
     ]
   },
   {
-    "id": "acts-13-16",
-    "dayNumber": 4,
-    "title": "Sent Out: Mission, Council, and Macedonia",
-    "scriptureReference": "Acts 13–16",
+    "id": "acts-13-14",
+    "dayNumber": 7,
+    "title": "Sent Out: The First Missionary Journey",
+    "scriptureReference": "Acts 13–14",
     "readingLinks": [
       {
-        "label": "Read Acts 13–16",
-        "url": "https://www.biblegateway.com/passage/?search=Acts%2013-16&version=NIV"
+        "label": "Read Acts 13–14",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2013-14&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 13–14",
+        "url": "https://www.esv.org/audio-player/Acts+13-14/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
       }
     ],
     "lesson": [
-      "While Antioch worships and fasts, the Spirit sets apart Barnabas and Saul. On Cyprus the proconsul believes; in Pisidian Antioch Paul proclaims forgiveness through the risen Jesus and turns to the Gentiles as a light to the nations. Joy and the Holy Spirit mark the disciples even amid opposition.",
-      "In Lystra Paul is nearly worshiped, then stoned—yet he returns to strengthen believers: we must go through many hardships to enter the kingdom. The Jerusalem council settles that Gentiles are saved by grace through the Lord Jesus, not by circumcision’s yoke. Antioch rejoices at the encouraging letter.",
-      "A Macedonian vision leads the team to Philippi. The Lord opens Lydia’s heart; Paul and Silas sing hymns in jail at midnight; the jailer believes—“Believe in the Lord Jesus, and you will be saved”—and his household is baptized. The gospel reaches a merchant, a slave girl, and a jailer alike."
+      "In Antioch the Holy Spirit says, “Set apart for me Barnabas and Saul.” After fasting and prayer, the church sends them. On Cyprus they confront Elymas; in Pisidian Antioch Paul proclaims Jesus from Israel’s story—forgiveness and freedom through Christ. Many rejoice; others stir persecution, and the missionaries shake the dust from their feet.",
+      "In Iconium and Lystra they keep preaching. At Lystra a lame man is healed; the crowd tries to worship Paul and Barnabas as gods, then turns and stones Paul. Yet he rises and continues. Returning through the cities, they strengthen disciples, appoint elders with prayer and fasting, and report to Antioch all that God had done—especially how he opened a door of faith to the Gentiles."
     ],
     "wordPuzzle": {
       "targetWords": [
         "SEND",
+        "GRACE",
+        "FAITH",
+        "TURN"
+      ],
+      "featuredVerse": {
+        "reference": "Acts 13:2",
+        "text": "While they were worshiping the Lord and fasting, the Holy Spirit said, “Set apart for me Barnabas and Saul for the work to which I have called them.”"
+      },
+      "letters": [
+        "A",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "N",
+        "R",
+        "S",
+        "T",
+        "U"
+      ]
+    },
+    "questions": [
+      {
+        "id": "d7q1",
+        "prompt": "Who set apart Barnabas and Saul for mission?",
+        "choices": [
+          "Herod",
+          "The Holy Spirit",
+          "The Sanhedrin",
+          "Roman officials"
+        ],
+        "correctIndex": 1,
+        "explanation": "The Holy Spirit said to set them apart (Acts 13:2)."
+      },
+      {
+        "id": "d7q2",
+        "prompt": "What island did they visit early in the journey?",
+        "choices": [
+          "Crete",
+          "Cyprus",
+          "Malta",
+          "Patmos"
+        ],
+        "correctIndex": 1,
+        "explanation": "They sailed to Cyprus (Acts 13:4)."
+      },
+      {
+        "id": "d7q3",
+        "prompt": "In Pisidian Antioch, what did Paul proclaim was available through Jesus?",
+        "choices": [
+          "Political freedom only",
+          "Forgiveness of sins",
+          "Temple rebuilding funds",
+          "Military victory"
+        ],
+        "correctIndex": 1,
+        "explanation": "Through Jesus, forgiveness of sins is proclaimed (Acts 13:38–39)."
+      },
+      {
+        "id": "d7q4",
+        "prompt": "What happened to Paul at Lystra after the healing?",
+        "choices": [
+          "He was made king",
+          "Crowds tried to worship him, then later stoned him",
+          "He stayed permanently",
+          "He refused to preach again"
+        ],
+        "correctIndex": 1,
+        "explanation": "They called them gods, then opponents stoned Paul (Acts 14:11–19)."
+      },
+      {
+        "id": "d7q5",
+        "prompt": "What did Paul and Barnabas do on the return trip?",
+        "choices": [
+          "Avoided the new churches",
+          "Strengthened disciples and appointed elders",
+          "Collected idols",
+          "Returned only by sea in secret"
+        ],
+        "correctIndex": 1,
+        "explanation": "They strengthened believers and appointed elders in each church (Acts 14:21–23)."
+      }
+    ]
+  },
+  {
+    "id": "acts-15-16",
+    "dayNumber": 8,
+    "title": "Council, Macedonia, and a Midnight Song",
+    "scriptureReference": "Acts 15–16",
+    "readingLinks": [
+      {
+        "label": "Read Acts 15–16",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2015-16&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 15–16",
+        "url": "https://www.esv.org/audio-player/Acts+15-16/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
+      }
+    ],
+    "lesson": [
+      "Debate arises: must Gentile believers be circumcised? In Jerusalem, Peter recalls Cornelius; Paul and Barnabas report signs among the Gentiles; James cites the prophets. The council affirms salvation by grace and sends a letter of welcome with a few wise practices for fellowship. Unity in the gospel is guarded with clarity and kindness.",
+      "Paul and Silas take the Macedonian call. In Philippi, Lydia’s heart opens; a slave girl’s freedom sparks a riot; Paul and Silas are beaten and jailed. At midnight they pray and sing hymns—then an earthquake opens doors. The jailer asks, “What must I do to be saved?” They answer, “Believe in the Lord Jesus,” and his household rejoices in baptism."
+    ],
+    "wordPuzzle": {
+      "targetWords": [
         "GRACE",
         "JOY",
         "FAITH",
@@ -423,7 +837,6 @@
       "letters": [
         "A",
         "C",
-        "D",
         "E",
         "F",
         "G",
@@ -434,117 +847,214 @@
         "N",
         "O",
         "R",
-        "S",
         "T",
         "Y"
       ]
     },
     "questions": [
       {
-        "id": "d4q1",
-        "prompt": "How were Barnabas and Saul set apart for mission?",
+        "id": "d8q1",
+        "prompt": "What major question did the Jerusalem Council address?",
         "choices": [
-          "By a Roman decree",
-          "By the Holy Spirit during worship and fasting",
-          "By casting lots alone",
-          "By popular vote only"
+          "Whether to leave Jerusalem",
+          "Whether Gentile believers must be circumcised to be saved",
+          "Whether to build a new temple",
+          "Whether Paul could travel alone"
         ],
         "correctIndex": 1,
-        "explanation": "While they were worshiping and fasting, the Spirit said, “Set apart for me Barnabas and Saul” (Acts 13:2–3)."
+        "explanation": "Some taught circumcision was required; the council settled the matter (Acts 15:1–11)."
       },
       {
-        "id": "d4q2",
-        "prompt": "What did Paul and Barnabas teach about entering the kingdom?",
+        "id": "d8q2",
+        "prompt": "How are people saved, according to Peter at the council?",
         "choices": [
-          "It is always easy",
-          "We must go through many hardships",
-          "Avoid all suffering",
-          "Wealth proves blessing"
-        ],
-        "correctIndex": 1,
-        "explanation": "We must go through many hardships to enter the kingdom of God (Acts 14:22)."
-      },
-      {
-        "id": "d4q3",
-        "prompt": "Peter’s conclusion at the Jerusalem council was that we are saved:",
-        "choices": [
-          "By different gospels",
+          "By keeping the whole law",
           "Through the grace of the Lord Jesus",
-          "By temple ritual",
-          "By Roman law"
+          "By Roman citizenship",
+          "By temple offerings"
         ],
         "correctIndex": 1,
-        "explanation": "Through the grace of our Lord Jesus we are saved, just as they are (Acts 15:11)."
+        "explanation": "Peter says we believe it is through the grace of our Lord Jesus that we are saved (Acts 15:11)."
       },
       {
-        "id": "d4q4",
-        "prompt": "How did the missionaries decide to go to Macedonia?",
+        "id": "d8q3",
+        "prompt": "What vision redirected Paul toward Europe?",
         "choices": [
-          "A travel brochure",
-          "A vision of a Macedonian man",
-          "Roman orders",
-          "A dream of gold"
+          "A man of Macedonia begging him to come help",
+          "A pillar of fire",
+          "A letter from Caesar",
+          "A dream of fishing nets"
         ],
-        "correctIndex": 1,
-        "explanation": "Paul saw a man of Macedonia begging, “Come over… and help us” (Acts 16:9–10)."
+        "correctIndex": 0,
+        "explanation": "The Macedonian vision called them to preach there (Acts 16:9–10)."
       },
       {
-        "id": "d4q5",
-        "prompt": "What did the Lord do for Lydia as she listened?",
+        "id": "d8q4",
+        "prompt": "What did Paul and Silas do at midnight in prison?",
         "choices": [
-          "Hardened her heart",
-          "Opened her heart to respond",
-          "Made her wealthy first",
-          "Sent her away"
+          "Slept quietly",
+          "Prayed and sang hymns to God",
+          "Planned an escape",
+          "Bribed the jailer"
         ],
         "correctIndex": 1,
-        "explanation": "The Lord opened her heart to respond to Paul’s message (Acts 16:14)."
+        "explanation": "About midnight they were praying and singing hymns (Acts 16:25)."
       },
       {
-        "id": "d4q6",
-        "prompt": "What did Paul tell the jailer he must do to be saved?",
+        "id": "d8q5",
+        "prompt": "What answer did they give the jailer about salvation?",
         "choices": [
-          "Pay a fine",
-          "Believe in the Lord Jesus",
-          "Memorize the law first",
-          "Leave Philippi"
+          "Earn it by good works",
+          "Believe in the Lord Jesus, and you will be saved",
+          "Wait for a priest",
+          "Pay a temple tax"
         ],
         "correctIndex": 1,
-        "explanation": "Believe in the Lord Jesus, and you will be saved—you and your household (Acts 16:31)."
-      }
-    ],
-    "audioLinks": [
-      {
-        "label": "Listen to Acts 13–16",
-        "url": "https://www.esv.org/audio-player/Acts+13-16/",
-        "downloadUrl": "",
-        "kind": "esv-embed"
+        "explanation": "Acts 16:31 is their clear gospel reply."
       }
     ]
   },
   {
-    "id": "acts-17-20",
-    "dayNumber": 5,
-    "title": "Cities, Idols, and Shepherds of the Flock",
-    "scriptureReference": "Acts 17–20",
+    "id": "acts-17-18",
+    "dayNumber": 9,
+    "title": "Cities, Idols, and Tentmaking",
+    "scriptureReference": "Acts 17–18",
     "readingLinks": [
       {
-        "label": "Read Acts 17–20",
-        "url": "https://www.biblegateway.com/passage/?search=Acts%2017-20&version=NIV"
+        "label": "Read Acts 17–18",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2017-18&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 17–18",
+        "url": "https://www.esv.org/audio-player/Acts+17-18/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
       }
     ],
     "lesson": [
-      "In Thessalonica Paul reasons from Scripture that the Messiah had to suffer and rise. Bereans examine the Scriptures daily. In Athens Paul proclaims the unknown God as Creator who calls all people everywhere to repent and will judge the world by the Man He raised from the dead.",
-      "In Corinth the Lord tells Paul not to fear—He has many people there. Paul stays eighteen months; Priscilla and Aquila later help Apollos know the way more accurately. In Ephesus the Spirit is given, sorcery scrolls are burned, and a riot over Artemis’s trade shows how the gospel threatens idols and markets.",
-      "At Miletus Paul charges the Ephesian elders: keep watch over yourselves and all the flock; wolves will come. He commits them to God and the word of His grace and recalls Jesus’ words: it is more blessed to give than to receive."
+      "In Thessalonica and Berea, Paul reasons from the Scriptures that the Messiah had to suffer and rise. Bereans examine the word daily with eagerness. In Athens, Paul addresses the Areopagus: God made the world, gives life and breath, and now commands all people everywhere to repent—because he has set a day to judge the world by the risen Jesus.",
+      "In Corinth, Paul works with Aquila and Priscilla as tentmakers and stays a year and a half teaching the word. The Lord encourages him in a night vision not to be afraid. Gallio dismisses charges against him. Apollos, eloquent and fervent, is gently instructed more accurately by Priscilla and Aquila, then powerfully helps believers. The gospel advances through Scripture, friendship, and courage."
     ],
     "wordPuzzle": {
       "targetWords": [
         "REPENT",
         "WORD",
+        "REASON",
+        "TENT"
+      ],
+      "featuredVerse": {
+        "reference": "Acts 17:30–31",
+        "text": "In the past God overlooked such ignorance, but now he commands all people everywhere to repent. For he has set a day when he will judge the world with justice by the man he has appointed. He has given proof of this to everyone by raising him from the dead."
+      },
+      "letters": [
+        "A",
+        "D",
+        "E",
+        "E",
+        "N",
+        "O",
+        "P",
+        "R",
+        "S",
+        "T",
+        "T",
+        "W"
+      ]
+    },
+    "questions": [
+      {
+        "id": "d9q1",
+        "prompt": "What were the Bereans known for?",
+        "choices": [
+          "Ignoring Scripture",
+          "Examining the Scriptures daily to see if Paul’s message was true",
+          "Building idols",
+          "Refusing visitors"
+        ],
+        "correctIndex": 1,
+        "explanation": "They received the message eagerly and examined the Scriptures daily (Acts 17:11)."
+      },
+      {
+        "id": "d9q2",
+        "prompt": "In Athens, what did Paul say God now commands all people to do?",
+        "choices": [
+          "Build more temples",
+          "Repent",
+          "Move to Jerusalem",
+          "Stop all trade"
+        ],
+        "correctIndex": 1,
+        "explanation": "God commands all people everywhere to repent (Acts 17:30)."
+      },
+      {
+        "id": "d9q3",
+        "prompt": "What trade did Paul practice with Aquila and Priscilla?",
+        "choices": [
+          "Fishing",
+          "Tentmaking",
+          "Metalwork",
+          "Shepherding"
+        ],
+        "correctIndex": 1,
+        "explanation": "They were tentmakers by trade (Acts 18:3)."
+      },
+      {
+        "id": "d9q4",
+        "prompt": "How long did Paul stay teaching in Corinth?",
+        "choices": [
+          "A week",
+          "A year and a half",
+          "Ten years",
+          "One day"
+        ],
+        "correctIndex": 1,
+        "explanation": "He stayed for a year and a half, teaching them the word of God (Acts 18:11)."
+      },
+      {
+        "id": "d9q5",
+        "prompt": "Who helped Apollos understand the way of God more accurately?",
+        "choices": [
+          "Gallio",
+          "Priscilla and Aquila",
+          "The Areopagus only",
+          "Silas alone"
+        ],
+        "correctIndex": 1,
+        "explanation": "Priscilla and Aquila explained the way of God more adequately (Acts 18:26)."
+      }
+    ]
+  },
+  {
+    "id": "acts-19-20",
+    "dayNumber": 10,
+    "title": "Ephesus, Idols, and Shepherds of the Flock",
+    "scriptureReference": "Acts 19–20",
+    "readingLinks": [
+      {
+        "label": "Read Acts 19–20",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2019-20&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 19–20",
+        "url": "https://www.esv.org/audio-player/Acts+19-20/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
+      }
+    ],
+    "lesson": [
+      "In Ephesus, disciples who knew only John’s baptism receive the Holy Spirit when Paul lays hands on them. The word spreads mightily; many who practiced magic burn their scrolls. Demetrius the silversmith stirs a riot for Artemis, but the city clerk calms the crowd. The gospel challenges idols and livelihoods built on them.",
+      "Paul travels through Macedonia and Greece, raises Eutychus at Troas, and hurries toward Jerusalem. At Miletus he meets the Ephesian elders: he has not hesitated to preach the whole counsel of God; they must keep watch over themselves and the flock; God bought the church with his own blood. With tears and prayer he commits them to God and the word of his grace."
+    ],
+    "wordPuzzle": {
+      "targetWords": [
         "FLOCK",
         "GRACE",
-        "GIVE"
+        "WORD",
+        "TEARS"
       ],
       "featuredVerse": {
         "reference": "Acts 20:28",
@@ -555,254 +1065,448 @@
         "C",
         "D",
         "E",
-        "E",
         "F",
         "G",
-        "I",
         "K",
         "L",
-        "N",
         "O",
-        "P",
         "R",
+        "S",
         "T",
-        "V",
         "W"
       ]
     },
     "questions": [
       {
-        "id": "d5q1",
-        "prompt": "What made the Bereans noble?",
+        "id": "d10q1",
+        "prompt": "What did many former magicians in Ephesus do?",
         "choices": [
-          "Wealth",
-          "Examining the Scriptures daily",
-          "Ignoring Paul",
-          "Building idols"
+          "Sold their scrolls quietly",
+          "Brought their scrolls together and burned them",
+          "Gave them to Artemis’s temple",
+          "Hid them forever"
         ],
         "correctIndex": 1,
-        "explanation": "They examined the Scriptures every day to see if what Paul said was true (Acts 17:11)."
+        "explanation": "They burned their scrolls publicly (Acts 19:19)."
       },
       {
-        "id": "d5q2",
-        "prompt": "In Athens Paul said God now commands all people to:",
+        "id": "d10q2",
+        "prompt": "Why did Demetrius stir up trouble in Ephesus?",
         "choices": [
-          "Build more temples",
-          "Repent",
-          "Ignore the resurrection",
-          "Worship many gods"
+          "He wanted baptism",
+          "Paul’s preaching threatened the silver shrine trade for Artemis",
+          "He hated Romans",
+          "He lost a court case"
         ],
         "correctIndex": 1,
-        "explanation": "God commands all people everywhere to repent (Acts 17:30–31)."
+        "explanation": "His business of silver shrines was threatened (Acts 19:24–27)."
       },
       {
-        "id": "d5q3",
-        "prompt": "In Corinth the Lord told Paul in a vision:",
+        "id": "d10q3",
+        "prompt": "What happened to Eutychus at Troas?",
         "choices": [
-          "Leave immediately",
-          "Do not be afraid—I have many people in this city",
-          "Stop tentmaking",
-          "Avoid Gentiles"
+          "He left the faith",
+          "He fell from a window and Paul restored him to life",
+          "He led the riot",
+          "He arrested Paul"
         ],
         "correctIndex": 1,
-        "explanation": "Do not be afraid; keep on speaking… I have many people in this city (Acts 18:9–10)."
+        "explanation": "Eutychus fell and was picked up dead; Paul threw himself on him and he lived (Acts 20:9–12)."
       },
       {
-        "id": "d5q4",
-        "prompt": "What did former sorcerers in Ephesus do?",
+        "id": "d10q4",
+        "prompt": "Whom did Paul meet at Miletus?",
         "choices": [
-          "Hid their books",
-          "Burned their scrolls publicly",
-          "Sold spells cheaper",
-          "Left town only"
+          "The Sanhedrin",
+          "The elders of the church in Ephesus",
+          "Caesar",
+          "Barnabas only"
         ],
         "correctIndex": 1,
-        "explanation": "They brought their scrolls together and burned them publicly (Acts 19:19)."
+        "explanation": "He sent for the elders of the church at Ephesus (Acts 20:17)."
       },
       {
-        "id": "d5q5",
-        "prompt": "Paul charged the Ephesian elders to watch over:",
+        "id": "d10q5",
+        "prompt": "What charge did Paul give the Ephesian elders?",
         "choices": [
-          "Only finances",
-          "Themselves and all the flock",
-          "Roman politics",
-          "Travel schedules"
+          "Ignore false teachers",
+          "Keep watch over themselves and all the flock as shepherds",
+          "Collect more silver",
+          "Leave Ephesus immediately"
         ],
         "correctIndex": 1,
-        "explanation": "Keep watch over yourselves and all the flock… Be shepherds of the church of God (Acts 20:28)."
-      },
-      {
-        "id": "d5q6",
-        "prompt": "Which saying of Jesus did Paul recall about giving?",
-        "choices": [
-          "Store up only on earth",
-          "It is more blessed to give than to receive",
-          "Give only to friends",
-          "Never work with your hands"
-        ],
-        "correctIndex": 1,
-        "explanation": "“It is more blessed to give than to receive” (Acts 20:35)."
-      }
-    ],
-    "audioLinks": [
-      {
-        "label": "Listen to Acts 17–20",
-        "url": "https://www.esv.org/audio-player/Acts+17-20/",
-        "downloadUrl": "",
-        "kind": "esv-embed"
+        "explanation": "Acts 20:28 calls them to shepherd the church of God."
       }
     ]
   },
   {
-    "id": "acts-21-24",
-    "dayNumber": 6,
-    "title": "Bound for Jesus’ Name: Arrest and Trials",
-    "scriptureReference": "Acts 21–24",
+    "id": "acts-21-22",
+    "dayNumber": 11,
+    "title": "Bound for Jesus’ Name in Jerusalem",
+    "scriptureReference": "Acts 21–22",
     "readingLinks": [
       {
-        "label": "Read Acts 21–24",
-        "url": "https://www.biblegateway.com/passage/?search=Acts%2021-24&version=NIV"
+        "label": "Read Acts 21–22",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2021-22&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 21–22",
+        "url": "https://www.esv.org/audio-player/Acts+21-22/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
       }
     ],
     "lesson": [
-      "Warned of chains, Paul still goes to Jerusalem, ready even to die for the name of the Lord Jesus. A temple riot erupts over rumors he defiled the holy place. On the steps he tells his Damascus story; mention of the Gentiles enrages the crowd. His Roman citizenship stops an unlawful flogging.",
-      "Before the Sanhedrin Paul stands on the hope of the resurrection, dividing Pharisees and Sadducees. That night the Lord stands near him: take courage—you must also testify in Rome. A plot of more than forty men is exposed by Paul’s nephew; soldiers escort him to Felix in Caesarea.",
-      "Before Felix, Paul worships the God of the ancestors, hopes in the resurrection, and speaks of righteousness, self-control, and judgment. Felix delays, hoping for a bribe, and leaves Paul imprisoned for two years—yet the Lord’s word about Rome still stands."
+      "Warned by prophets—including Agabus who binds his own hands with Paul’s belt—Paul still goes up to Jerusalem, ready not only to be bound but to die for the name of the Lord Jesus. James and the elders rejoice at God’s work among the Gentiles and urge Paul to join purification rites to quiet rumors among Jewish believers.",
+      "Jews from Asia stir a temple mob, claiming Paul defiled the holy place. Roman soldiers rescue him as the crowd shouts. On the steps Paul tells his conversion story in Aramaic: persecutor, Damascus light, Ananias, and his call to the Gentiles. When he mentions that call, the crowd erupts again. Citizenship and courage meet a hostile city."
     ],
     "wordPuzzle": {
       "targetWords": [
         "READY",
         "NAME",
+        "TEMPLE",
+        "MOB"
+      ],
+      "featuredVerse": {
+        "reference": "Acts 21:13",
+        "text": "Then Paul answered, “Why are you weeping and breaking my heart? I am ready not only to be bound, but also to die in Jerusalem for the name of the Lord Jesus.”"
+      },
+      "letters": [
+        "A",
+        "B",
+        "D",
+        "E",
+        "E",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "R",
+        "T",
+        "Y"
+      ]
+    },
+    "questions": [
+      {
+        "id": "d11q1",
+        "prompt": "What did Agabus do with Paul’s belt?",
+        "choices": [
+          "Sold it",
+          "Bound his own hands and feet, saying the owner would be bound in Jerusalem",
+          "Gave it to James",
+          "Burned it"
+        ],
+        "correctIndex": 1,
+        "explanation": "Agabus prophesied Paul’s binding in Jerusalem (Acts 21:11)."
+      },
+      {
+        "id": "d11q2",
+        "prompt": "How did Paul respond to those urging him not to go?",
+        "choices": [
+          "He canceled the trip",
+          "He said he was ready to be bound and even to die for Jesus’ name",
+          "He sent Timothy instead",
+          "He hid in Caesarea"
+        ],
+        "correctIndex": 1,
+        "explanation": "Acts 21:13 shows Paul’s resolve."
+      },
+      {
+        "id": "d11q3",
+        "prompt": "What accusation sparked the temple riot?",
+        "choices": [
+          "That Paul stole offering money",
+          "That he brought Greeks into the temple and defiled it",
+          "That he cursed Moses",
+          "That he refused to pray"
+        ],
+        "correctIndex": 1,
+        "explanation": "They claimed he brought Greeks into the temple and defiled the holy place (Acts 21:28)."
+      },
+      {
+        "id": "d11q4",
+        "prompt": "In what language did Paul address the crowd from the steps?",
+        "choices": [
+          "Latin",
+          "Aramaic (Hebrew dialect)",
+          "Egyptian",
+          "Only Greek"
+        ],
+        "correctIndex": 1,
+        "explanation": "He spoke to them in Aramaic, and they became quieter (Acts 21:40–22:2)."
+      },
+      {
+        "id": "d11q5",
+        "prompt": "What part of Paul’s testimony made the crowd shout again?",
+        "choices": [
+          "His birth in Tarsus",
+          "The Lord’s sending him to the Gentiles",
+          "His training under Gamaliel",
+          "His tentmaking"
+        ],
+        "correctIndex": 1,
+        "explanation": "When he mentioned being sent far away to the Gentiles, they raised their voices (Acts 22:21–22)."
+      }
+    ]
+  },
+  {
+    "id": "acts-23-24",
+    "dayNumber": 12,
+    "title": "Councils, Plots, and a Clear Conscience",
+    "scriptureReference": "Acts 23–24",
+    "readingLinks": [
+      {
+        "label": "Read Acts 23–24",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2023-24&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 23–24",
+        "url": "https://www.esv.org/audio-player/Acts+23-24/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
+      }
+    ],
+    "lesson": [
+      "Before the Sanhedrin, Paul declares he has fulfilled his duty to God in all good conscience. Division between Pharisees and Sadducees erupts over resurrection hope. That night the Lord stands near Paul: “Take courage! As you have testified about me in Jerusalem, so you must also testify in Rome.” A murderous plot is exposed by Paul’s nephew; soldiers escort him safely to Felix in Caesarea.",
+      "Tertullus accuses Paul of being a troublemaker; Paul calmly defends his worship and hope in the resurrection. Felix, familiar with the Way, delays judgment, often talks with Paul, and hopes for a bribe. Two years pass. The gospel is not silenced by politics—Paul keeps speaking about righteousness, self-control, and the judgment to come."
+    ],
+    "wordPuzzle": {
+      "targetWords": [
         "HOPE",
         "ROME",
-        "COURAGE"
+        "TRUTH",
+        "COURT"
       ],
       "featuredVerse": {
         "reference": "Acts 23:11",
         "text": "The following night the Lord stood near Paul and said, “Take courage! As you have testified about me in Jerusalem, so you must also testify in Rome.”"
       },
       "letters": [
-        "A",
         "C",
-        "D",
         "E",
-        "G",
         "H",
         "M",
-        "N",
         "O",
         "P",
         "R",
-        "U",
-        "Y"
+        "T",
+        "T",
+        "U"
       ]
     },
     "questions": [
       {
-        "id": "d6q1",
-        "prompt": "How did Paul respond to warnings about suffering in Jerusalem?",
+        "id": "d12q1",
+        "prompt": "What did the Lord tell Paul at night after the Sanhedrin hearing?",
         "choices": [
-          "He canceled the trip",
-          "He said he was ready to be bound or die for Jesus’ name",
-          "He sent Timothy alone",
-          "He denied the prophecies"
+          "Flee to Egypt",
+          "Take courage—you must also testify in Rome",
+          "Stop preaching",
+          "Pay Felix a bribe"
         ],
         "correctIndex": 1,
-        "explanation": "He was ready not only to be bound but also to die for the name of the Lord Jesus (Acts 21:13)."
+        "explanation": "Acts 23:11 promises testimony in Rome."
       },
       {
-        "id": "d6q2",
-        "prompt": "What especially angered the Jerusalem crowd in Paul’s defense?",
+        "id": "d12q2",
+        "prompt": "How was the plot to kill Paul discovered?",
         "choices": [
-          "Temple",
-          "Gentiles",
-          "Prayer",
-          "Moses"
+          "An angel told Felix",
+          "Paul’s nephew heard of it and reported it",
+          "The assassins confessed publicly",
+          "Rhoda overheard in Antioch"
         ],
         "correctIndex": 1,
-        "explanation": "They listened until he said he was sent to the Gentiles (Acts 22:21–22)."
+        "explanation": "The son of Paul’s sister heard of the plot (Acts 23:16)."
       },
       {
-        "id": "d6q3",
-        "prompt": "What hope did Paul highlight that split the council?",
+        "id": "d12q3",
+        "prompt": "Where was Paul taken for safety and trial under Felix?",
         "choices": [
-          "Political freedom",
-          "The resurrection of the dead",
-          "Lower taxes",
-          "A new high priest"
+          "Damascus",
+          "Caesarea",
+          "Athens",
+          "Lystra"
         ],
         "correctIndex": 1,
-        "explanation": "He stood on trial because of the hope of the resurrection of the dead (Acts 23:6)."
+        "explanation": "Soldiers brought him to Caesarea to Governor Felix (Acts 23:23–35)."
       },
       {
-        "id": "d6q4",
-        "prompt": "What did the Lord promise Paul at night?",
+        "id": "d12q4",
+        "prompt": "What hope did Paul emphasize in his defense?",
         "choices": [
-          "Immediate release",
-          "He must also testify in Rome",
-          "Wealth from Felix",
-          "Retirement in Tarsus"
+          "Hope in political reform",
+          "Hope in the resurrection of the dead",
+          "Hope in temple wealth",
+          "Hope in Greek philosophy"
         ],
         "correctIndex": 1,
-        "explanation": "Take courage! … you must also testify in Rome (Acts 23:11)."
+        "explanation": "Paul spoke of the resurrection of the dead as his hope (Acts 23:6; 24:15)."
       },
       {
-        "id": "d6q5",
-        "prompt": "Who warned of the plot to ambush Paul?",
+        "id": "d12q5",
+        "prompt": "Why did Felix keep Paul in custody so long?",
         "choices": [
-          "Felix",
-          "Paul’s nephew",
-          "Tertullus",
-          "A cook"
+          "He was convinced Paul was innocent and released him immediately",
+          "He delayed, often listened, and hoped for a bribe; Paul remained two years",
+          "Caesar ordered a life sentence",
+          "Paul asked to stay forever"
         ],
         "correctIndex": 1,
-        "explanation": "The son of Paul’s sister heard of the plot and reported it (Acts 23:16–22)."
-      },
-      {
-        "id": "d6q6",
-        "prompt": "What topics made Felix afraid when Paul spoke?",
-        "choices": [
-          "Weather and ships",
-          "Righteousness, self-control, and the judgment to come",
-          "Farming tips",
-          "Greek poetry"
-        ],
-        "correctIndex": 1,
-        "explanation": "As Paul talked about righteousness, self-control and the judgment to come, Felix was afraid (Acts 24:25)."
-      }
-    ],
-    "audioLinks": [
-      {
-        "label": "Listen to Acts 21–24",
-        "url": "https://www.esv.org/audio-player/Acts+21-24/",
-        "downloadUrl": "",
-        "kind": "esv-embed"
+        "explanation": "Felix left Paul in prison for two years, hoping for money (Acts 24:25–27)."
       }
     ]
   },
   {
-    "id": "acts-25-28",
-    "dayNumber": 7,
-    "title": "Appeal, Storm, and the Gospel Unhindered",
-    "scriptureReference": "Acts 25–28",
+    "id": "acts-25-26",
+    "dayNumber": 13,
+    "title": "Appeal to Caesar; Witness Before a King",
+    "scriptureReference": "Acts 25–26",
     "readingLinks": [
       {
-        "label": "Read Acts 25–28",
-        "url": "https://www.biblegateway.com/passage/?search=Acts%2025-28&version=NIV"
+        "label": "Read Acts 25–26",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2025-26&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 25–26",
+        "url": "https://www.esv.org/audio-player/Acts+25-26/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
       }
     ],
     "lesson": [
-      "Festus suggests a Jerusalem trial; Paul appeals to Caesar. Before Agrippa he recounts the heavenly vision: Jesus sent him to open eyes, turn people from darkness to light and from Satan to God. Festus calls him insane; Agrippa is almost persuaded. Paul wishes all might become as he is—except for the chains.",
-      "On the voyage to Italy a violent storm strips hope from the crew. Paul shares an angel’s assurance: he must stand before Caesar, and God has granted him all who sail with him. All 276 reach Malta safely. A viper does Paul no harm; he heals many on the island.",
-      "In Rome Paul lives under guard, explains the hope of Israel, and from morning till evening teaches Jesus from the Law and Prophets. For two years he welcomes all who come, proclaiming the kingdom of God and teaching about the Lord Jesus Christ with all boldness and without hindrance. Acts ends with an open door."
+      "Festus succeeds Felix. Jewish leaders renew charges; Paul insists he has done nothing wrong against Jewish law, the temple, or Caesar. To avoid a biased Jerusalem trial, Paul appeals to Caesar. King Agrippa and Bernice arrive, and Festus admits he has nothing definite to write to the emperor about this prisoner.",
+      "Before Agrippa, Paul recounts his devout past, the Damascus vision, and his obedience to the heavenly vision—preaching repentance to Jews and Gentiles. He asks why it should be thought incredible that God raises the dead. Agrippa is almost persuaded; Festus calls Paul insane. Yet they agree he could have been set free if he had not appealed to Caesar. Chains cannot cancel the mission."
     ],
     "wordPuzzle": {
       "targetWords": [
         "LIGHT",
         "VISION",
+        "APPEAL",
+        "KING"
+      ],
+      "featuredVerse": {
+        "reference": "Acts 26:19",
+        "text": "So then, King Agrippa, I was not disobedient to the vision from heaven."
+      },
+      "letters": [
+        "A",
+        "A",
+        "E",
+        "G",
+        "H",
+        "I",
+        "I",
+        "K",
+        "L",
+        "N",
+        "O",
+        "P",
+        "P",
+        "S",
+        "T",
+        "V"
+      ]
+    },
+    "questions": [
+      {
+        "id": "d13q1",
+        "prompt": "Why did Paul appeal to Caesar?",
+        "choices": [
+          "He wanted a vacation in Rome",
+          "To avoid being handed over for a biased trial in Jerusalem",
+          "Festus ordered it",
+          "Agrippa demanded it"
+        ],
+        "correctIndex": 1,
+        "explanation": "Paul refused to go to Jerusalem and appealed to Caesar (Acts 25:9–12)."
+      },
+      {
+        "id": "d13q2",
+        "prompt": "Before whom did Paul give his extended testimony in Acts 26?",
+        "choices": [
+          "Nero only",
+          "King Agrippa",
+          "The Areopagus again",
+          "Lydia"
+        ],
+        "correctIndex": 1,
+        "explanation": "Paul spoke before King Agrippa (Acts 26:1–2)."
+      },
+      {
+        "id": "d13q3",
+        "prompt": "What did Paul say he was not disobedient to?",
+        "choices": [
+          "Roman taxes",
+          "The vision from heaven",
+          "Gamaliel’s advice",
+          "Felix’s bribe request"
+        ],
+        "correctIndex": 1,
+        "explanation": "Acts 26:19: he was not disobedient to the heavenly vision."
+      },
+      {
+        "id": "d13q4",
+        "prompt": "What did Agrippa say after Paul’s appeal?",
+        "choices": [
+          "Paul must die at once",
+          "Do you think that in such a short time you can persuade me to be a Christian?",
+          "Paul is free to leave Judea forever",
+          "Stop all preaching"
+        ],
+        "correctIndex": 1,
+        "explanation": "Agrippa’s famous reply is in Acts 26:28."
+      },
+      {
+        "id": "d13q5",
+        "prompt": "What did Agrippa and Festus conclude about Paul?",
+        "choices": [
+          "He deserved death",
+          "He had done nothing deserving death or imprisonment; he could have been free if he had not appealed to Caesar",
+          "He should return to tentmaking",
+          "He must stay silent forever"
+        ],
+        "correctIndex": 1,
+        "explanation": "They agreed he had done nothing deserving death or chains (Acts 26:31–32)."
+      }
+    ]
+  },
+  {
+    "id": "acts-27-28",
+    "dayNumber": 14,
+    "title": "Storm, Shipwreck, and an Unhindered Gospel",
+    "scriptureReference": "Acts 27–28",
+    "readingLinks": [
+      {
+        "label": "Read Acts 27–28",
+        "url": "https://www.biblegateway.com/passage/?search=Acts%2027-28&version=NIV"
+      }
+    ],
+    "audioLinks": [
+      {
+        "label": "Listen to Acts 27–28",
+        "url": "https://www.esv.org/audio-player/Acts+27-28/",
+        "downloadUrl": "",
+        "kind": "esv-embed"
+      }
+    ],
+    "lesson": [
+      "Sailing for Rome, Paul warns of disaster, but the centurion listens to the pilot. A violent storm named Euroclydon drives the ship. An angel tells Paul that he must stand before Caesar and that God has graciously given him the lives of all aboard. Paul urges them to eat; the ship runs aground; all 276 reach shore safely on Malta.",
+      "On the island, a viper bites Paul without harm; he heals Publius’s father and many others. In Rome, Paul is allowed to live under guard, explains the hope of Israel to Jewish leaders, and for two years welcomes all who come—proclaiming the kingdom of God and teaching about the Lord Jesus Christ with all boldness and without hindrance. The book ends with an open door, not a closed cell."
+    ],
+    "wordPuzzle": {
+      "targetWords": [
         "STORM",
         "SAFE",
-        "BOLD"
+        "BOLD",
+        "ISLAND"
       ],
       "featuredVerse": {
         "reference": "Acts 28:31",
@@ -814,9 +1518,6 @@
         "D",
         "E",
         "F",
-        "G",
-        "H",
-        "I",
         "I",
         "L",
         "M",
@@ -824,90 +1525,69 @@
         "O",
         "R",
         "S",
-        "T",
-        "V"
+        "T"
       ]
     },
     "questions": [
       {
-        "id": "d7q1",
-        "prompt": "Why did Paul appeal to Caesar?",
+        "id": "d14q1",
+        "prompt": "What assurance did an angel give Paul in the storm?",
         "choices": [
-          "He preferred Roman food",
-          "He refused an unfair Jerusalem transfer and used his right",
-          "Festus ordered him to",
-          "Agrippa demanded it"
+          "The ship would never wreck",
+          "He must stand before Caesar, and God had given him all those sailing with him",
+          "They should jump overboard at once",
+          "Rome would be empty"
         ],
         "correctIndex": 1,
-        "explanation": "Paul appealed to Caesar after Festus suggested a Jerusalem trial (Acts 25:9–12)."
+        "explanation": "Acts 27:23–24 records the angel’s message."
       },
       {
-        "id": "d7q2",
-        "prompt": "Jesus sent Paul to turn people from:",
+        "id": "d14q2",
+        "prompt": "How many people were aboard and reached land safely?",
         "choices": [
-          "Rome to Judea",
-          "Darkness to light and Satan to God",
-          "Work to leisure",
-          "Greek to Hebrew only"
+          "12",
+          "120",
+          "276",
+          "3,000"
+        ],
+        "correctIndex": 2,
+        "explanation": "There were 276 aboard, and all were brought safely to land (Acts 27:37, 44)."
+      },
+      {
+        "id": "d14q3",
+        "prompt": "On which island were they shipwrecked?",
+        "choices": [
+          "Cyprus",
+          "Malta (Melita)",
+          "Crete permanently",
+          "Patmos"
         ],
         "correctIndex": 1,
-        "explanation": "To open their eyes and turn them from darkness to light, and from the power of Satan to God (Acts 26:18)."
+        "explanation": "They learned the island was called Malta (Acts 28:1)."
       },
       {
-        "id": "d7q3",
-        "prompt": "During the storm, what assurance did Paul share?",
+        "id": "d14q4",
+        "prompt": "What happened when a viper fastened on Paul’s hand?",
         "choices": [
-          "All would drown",
-          "He must stand before Caesar and God granted him all aboard",
-          "They should jump immediately",
-          "An idol would save them"
+          "He died immediately",
+          "He suffered no ill effects",
+          "He threw the island into panic forever",
+          "Soldiers executed him"
         ],
         "correctIndex": 1,
-        "explanation": "An angel said Paul must stand before Caesar, and God had given him all who sailed with him (Acts 27:23–24)."
+        "explanation": "He suffered no ill effects, and people changed their minds about him (Acts 28:3–6)."
       },
       {
-        "id": "d7q4",
-        "prompt": "How many people reached land safely?",
-        "choices": [
-          "Only the soldiers",
-          "All 276",
-          "Half the crew",
-          "Paul alone"
-        ],
-        "correctIndex": 1,
-        "explanation": "In all there were 276 on board; everyone reached land safely (Acts 27:37, 44)."
-      },
-      {
-        "id": "d7q5",
-        "prompt": "In Rome Paul said he was in chains because of:",
-        "choices": [
-          "Theft",
-          "The hope of Israel",
-          "Tax fraud",
-          "Desertion"
-        ],
-        "correctIndex": 1,
-        "explanation": "It is because of the hope of Israel that I am bound with this chain (Acts 28:20)."
-      },
-      {
-        "id": "d7q6",
+        "id": "d14q5",
         "prompt": "How does Acts describe Paul’s ministry in Rome at the end?",
         "choices": [
-          "Secret and fearful",
-          "Bold and unhindered proclamation of the kingdom",
-          "Ended after one week",
-          "Only to soldiers"
+          "Silenced by guards",
+          "Proclaiming the kingdom and teaching about Jesus with all boldness and without hindrance",
+          "Only writing letters in secret",
+          "Abandoned by all visitors"
         ],
         "correctIndex": 1,
-        "explanation": "He proclaimed the kingdom and taught about Jesus with all boldness and without hindrance (Acts 28:30–31)."
-      }
-    ],
-    "audioLinks": [
-      {
-        "label": "Listen to Acts 25–28",
-        "url": "https://www.esv.org/audio-player/Acts+25-28/",
-        "downloadUrl": "",
-        "kind": "esv-embed"
+        "explanation": "Acts 28:31 closes with bold, unhindered proclamation."
       }
     ]
   }
