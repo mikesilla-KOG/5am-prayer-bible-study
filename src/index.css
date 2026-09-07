@@ -1,0 +1,90 @@
+:root {
+  color-scheme: dark;
+  --bg-deep: #0f0a1f;
+  --bg: #1a1035;
+  --bg-mid: #241548;
+  --bg-elevated: #2e1c5c;
+  --card: linear-gradient(165deg, rgba(46, 28, 92, 0.92) 0%, rgba(26, 16, 53, 0.96) 100%);
+  --card-solid: #25164a;
+  --ink: #f5efe6;
+  --cream: #f8f1e3;
+  --ivory: #efe6d5;
+  --muted: #b9aec8;
+  --gold: #d4af37;
+  --gold-bright: #f0d78c;
+  --gold-soft: rgba(212, 175, 55, 0.18);
+  --champagne: #e8d5a3;
+  --burgundy: #7a2f45;
+  --burgundy-soft: rgba(122, 47, 69, 0.35);
+  --success: #6ecf9b;
+  --success-bg: rgba(46, 120, 85, 0.35);
+  --danger: #f0a090;
+  --danger-bg: rgba(122, 47, 69, 0.45);
+  --line: rgba(212, 175, 55, 0.22);
+  --shadow: 0 12px 40px rgba(5, 2, 18, 0.45);
+  --glow-gold: 0 0 24px rgba(212, 175, 55, 0.35);
+  --radius: 18px;
+  --radius-sm: 12px;
+  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+  --tap: 48px;
+  --max: 430px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  background:
+    radial-gradient(ellipse 900px 500px at 50% -8%, rgba(90, 50, 140, 0.55) 0%, transparent 60%),
+    radial-gradient(ellipse 600px 400px at 100% 40%, rgba(122, 47, 69, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse 500px 350px at 0% 80%, rgba(42, 27, 85, 0.8) 0%, transparent 55%),
+    linear-gradient(180deg, #1a1035 0%, #0f0a1f 100%);
+  background-attachment: fixed;
+  line-height: 1.55;
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: var(--gold-bright);
+}
+
+code {
+  font-size: 0.88em;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--champagne);
+  padding: 0.12em 0.4em;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.35);
+  color: var(--cream);
+}
