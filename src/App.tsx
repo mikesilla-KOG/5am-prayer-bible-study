@@ -6,6 +6,7 @@ import { Home } from './components/Home'
 import config from './data/config.json'
 import lessonsData from './data/lessons.json'
 import type { Lesson, View } from './types'
+import { setLastOpenedDay } from './utils/progress'
 import { getLessonByDay, getPlanStatus } from './utils/schedule'
 import './App.css'
 
@@ -13,6 +14,7 @@ const lessons = lessonsData as Lesson[]
 
 export default function App() {
   const [view, setView] = useState<View>({ name: 'home' })
+  const [progressVersion, setProgressVersion] = useState(0)
 
   const status = useMemo(
     () => getPlanStatus(config.planStartDate, lessons.length),
@@ -31,6 +33,15 @@ export default function App() {
       ? null
       : getLessonByDay(lessons, status.kind === 'before' ? 1 : status.dayNumber) ?? null
 
+  function openDay(dayNumber: number) {
+    setLastOpenedDay(dayNumber)
+    setView({ name: 'day', dayNumber })
+  }
+
+  function bumpProgress() {
+    setProgressVersion((v) => v + 1)
+  }
+
   return (
     <div className="app-shell">
       <Header onHome={() => setView({ name: 'home' })} />
@@ -40,7 +51,8 @@ export default function App() {
             status={status}
             lesson={homeLesson}
             totalDays={lessons.length}
-            onOpenDay={(dayNumber) => setView({ name: 'day', dayNumber })}
+            progressVersion={progressVersion}
+            onOpenDay={openDay}
             onAllLessons={() => setView({ name: 'all' })}
           />
         )}
@@ -48,7 +60,8 @@ export default function App() {
           <AllLessons
             lessons={lessons}
             todayDay={todayDay}
-            onSelect={(dayNumber) => setView({ name: 'day', dayNumber })}
+            progressVersion={progressVersion}
+            onSelect={openDay}
             onBack={() => setView({ name: 'home' })}
           />
         )}
@@ -75,6 +88,7 @@ export default function App() {
                 badge={`Day ${lesson.dayNumber} of ${lessons.length}`}
                 onBack={() => setView({ name: 'home' })}
                 onAllLessons={() => setView({ name: 'all' })}
+                onProgressSaved={bumpProgress}
               />
             )
           })()}
@@ -84,6 +98,7 @@ export default function App() {
           {config.title}
           <span className="footer-sub"> · {config.subtitle}</span>
         </p>
+        <p className="progress-saved-note footer-saved">Saved on this phone</p>
       </footer>
     </div>
   )

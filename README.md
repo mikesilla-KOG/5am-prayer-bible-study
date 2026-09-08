@@ -70,6 +70,34 @@ Use Node 20+. Vite `base` is `/5am-prayer-bible-study/` for GitHub Pages.
 
 If the repo name differs, change `base` in `vite.config.ts` to match the Pages path.
 
+
+## Install on your phone (PWA)
+
+You can add this study to your Home Screen so it opens like an app (full screen, own icon).
+
+### iPhone (Safari)
+1. Open the site in **Safari**.
+2. Tap the **Share** button (square with an arrow).
+3. Scroll and tap **Add to Home Screen**.
+4. Tap **Add**.
+
+### Android (Chrome)
+1. Open the site in **Chrome**.
+2. Tap the **⋮** menu.
+3. Tap **Install app** or **Add to Home screen**.
+4. Confirm.
+
+### What is saved locally
+Progress is stored **only on this phone/browser** (localStorage), not in the cloud:
+
+- Which day numbers you completed
+- Quiz score per day (correct / total)
+- Last day you opened
+
+**Completion rule:** a day is marked **Done** when you finish the quiz and see your score (you do not need a perfect score).
+
+Clearing browser data or using another device resets progress. Offline use caches the app shell and main assets; large lesson videos may still need a network connection the first time.
+
 ## Notes
 
 - Day 1 includes an optional Audible secondary link; primary listen for every day is the ESV audio embed.

@@ -1,14 +1,23 @@
 import { useState } from 'react'
 import type { Question } from '../types'
+import { recordQuizComplete } from '../utils/progress'
 import { IconChecklist } from './Icons'
 
 interface QuizProps {
   questions: Question[]
   lessonId: string
+  dayNumber: number
   stepNumber?: number
+  onProgressSaved?: () => void
 }
 
-export function Quiz({ questions, lessonId, stepNumber = 5 }: QuizProps) {
+export function Quiz({
+  questions,
+  lessonId,
+  dayNumber,
+  stepNumber = 5,
+  onProgressSaved,
+}: QuizProps) {
   const [index, setIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number>>({})
   const [revealed, setRevealed] = useState(false)
@@ -30,6 +39,9 @@ export function Quiz({ questions, lessonId, stepNumber = 5 }: QuizProps) {
 
   function next() {
     if (index >= questions.length - 1) {
+      // Mark day complete when the reader finishes the quiz (sees score).
+      recordQuizComplete(dayNumber, score, questions.length)
+      onProgressSaved?.()
       setFinished(true)
       return
     }
@@ -62,6 +74,7 @@ export function Quiz({ questions, lessonId, stepNumber = 5 }: QuizProps) {
             You got {score} of {questions.length} right
             {score === questions.length ? ' — Well done!' : '!'}
           </p>
+          <p className="progress-saved-note">Saved on this phone · Day {dayNumber} done</p>
           <button type="button" className="btn secondary big" onClick={reset}>
             Try again
           </button>

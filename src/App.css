@@ -204,6 +204,10 @@
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--champagne);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
 }
 
 .today-title {
@@ -1079,3 +1083,116 @@
   max-height: 70vh;
   background: #1a1228;
 }
+
+
+/* —— Progress / PWA notes —— */
+.progress-card {
+  padding-bottom: 18px;
+}
+
+.progress-summary {
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.day-dots {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.day-dot {
+  width: 100%;
+  aspect-ratio: 1;
+  min-height: 40px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--cream);
+  font-weight: 700;
+  font-size: 0.95rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.day-dot.done {
+  background: var(--success-bg);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.day-dot:hover,
+.day-dot:focus-visible {
+  border-color: var(--gold);
+  outline: none;
+}
+
+.done-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--success-bg);
+  color: var(--success);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.done-pill {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0f0a1f;
+  background: var(--success);
+  border-radius: 999px;
+  padding: 6px 10px;
+}
+
+.lesson-day-num.done {
+  background: var(--success-bg);
+  border-color: var(--success);
+  color: var(--success);
+}
+
+.lesson-row-done {
+  border-color: rgba(110, 207, 155, 0.35);
+}
+
+.progress-saved-note {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  color: var(--muted);
+  opacity: 0.9;
+}
+
+.quiz-done .progress-saved-note {
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.footer-saved {
+  margin-top: 6px;
+  font-size: 0.85rem;
+}
+
+.install-tip {
+  margin: 8px 0 16px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px dashed var(--line);
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+  background: rgba(255, 255, 255, 0.03);
+}
+

@@ -8,6 +8,7 @@ interface DayViewProps {
   badge?: string
   onBack?: () => void
   onAllLessons?: () => void
+  onProgressSaved?: () => void
 }
 
 function audibleAsinFromUrl(url: string): string | null {
@@ -27,7 +28,7 @@ function audibleOpenHref(webUrl: string): string {
   return `intent://www.audible.com/pd/${asin}#Intent;scheme=https;package=com.audible.application;S.browser_fallback_url=${fallback};end`
 }
 
-export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
+export function DayView({ lesson, badge, onBack, onAllLessons, onProgressSaved }: DayViewProps) {
   const reading = lesson.readingLinks[0]
   const esvAudio =
     lesson.audioLinks.find((l) => l.kind === 'esv-embed' || l.url.includes('esv.org/audio-player')) ??
@@ -179,7 +180,13 @@ export function DayView({ lesson, badge, onBack, onAllLessons }: DayViewProps) {
 
       <WordPuzzle puzzle={lesson.wordPuzzle} lessonId={lesson.id} stepNumber={4} />
 
-      <Quiz questions={lesson.questions} lessonId={lesson.id} stepNumber={5} />
+      <Quiz
+        questions={lesson.questions}
+        lessonId={lesson.id}
+        dayNumber={lesson.dayNumber}
+        stepNumber={5}
+        onProgressSaved={onProgressSaved}
+      />
 
       {onAllLessons && (
         <p className="day-footer-nav">
