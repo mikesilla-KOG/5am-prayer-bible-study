@@ -30,6 +30,20 @@ export interface WordPuzzle {
   featuredVerse: FeaturedVerse
 }
 
+export interface CrosswordEntry {
+  number: number
+  direction: 'across' | 'down'
+  row: number
+  col: number
+  answer: string
+  clue: string
+}
+
+export interface Crossword {
+  size: number
+  entries: CrosswordEntry[]
+}
+
 export interface Lesson {
   id: string
   dayNumber: number
@@ -40,6 +54,7 @@ export interface Lesson {
   /** Short Learn bullets (5th-grade reading level; 3–8 items). */
   lesson: string[]
   wordPuzzle: WordPuzzle
+  crossword: Crossword
   questions: Question[]
   /** Optional stick-figure focus video path under public/ (Day 1 Acts 1). */
   stickFigureVideo?: string

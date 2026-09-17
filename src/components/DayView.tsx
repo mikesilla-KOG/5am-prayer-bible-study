@@ -1,6 +1,7 @@
 import type { Lesson } from '../types'
 import { IconBook, IconHeadphones, IconLightbulb } from './Icons'
 import { Quiz } from './Quiz'
+import { Crossword } from './Crossword'
 import { WordPuzzle } from './WordPuzzle'
 
 interface DayViewProps {
@@ -180,11 +181,13 @@ export function DayView({ lesson, badge, onBack, onAllLessons, onProgressSaved }
 
       <WordPuzzle puzzle={lesson.wordPuzzle} lessonId={lesson.id} stepNumber={4} />
 
+      <Crossword puzzle={lesson.crossword} lessonId={lesson.id} stepNumber={5} />
+
       <Quiz
         questions={lesson.questions}
         lessonId={lesson.id}
         dayNumber={lesson.dayNumber}
-        stepNumber={5}
+        stepNumber={6}
         onProgressSaved={onProgressSaved}
       />
 

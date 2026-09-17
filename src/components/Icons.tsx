@@ -99,3 +99,12 @@ export function IconChevron({ className, title }: IconProps) {
     </svg>
   )
 }
+
+export function IconGrid({ className, title }: IconProps) {
+  return (
+    <svg {...svgProps} className={className} role={title ? 'img' : undefined}>
+      {title ? <title>{title}</title> : null}
+      <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" />
+    </svg>
+  )
+}
