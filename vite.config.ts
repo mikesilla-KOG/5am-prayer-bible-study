@@ -15,9 +15,9 @@ export default defineConfig({
         name: '5 AM Prayer Bible Study',
         short_name: '5AM Study',
         description:
-          '5 AM Prayer Bible Study — Carmen. A royal, mobile-first journey through the Book of Acts.',
-        theme_color: '#1a1035',
-        background_color: '#1a1035',
+          '5 AM Prayer Bible Study — Carmen. An elegant, mobile-first journey through the Book of Acts.',
+        theme_color: '#510F1C',
+        background_color: '#F7F3EB',
         display: 'standalone',
         orientation: 'portrait',
         start_url: BASE,

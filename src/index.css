@@ -1,36 +1,45 @@
 :root {
-  color-scheme: dark;
-  --bg-deep: #0f0a1f;
-  --bg: #1a1035;
-  --bg-mid: #241548;
-  --bg-elevated: #2e1c5c;
-  --card: linear-gradient(165deg, rgba(46, 28, 92, 0.92) 0%, rgba(26, 16, 53, 0.96) 100%);
-  --card-solid: #25164a;
-  --ink: #f5efe6;
-  --cream: #f8f1e3;
-  --ivory: #efe6d5;
-  --muted: #c4b8d4;
-  --gold: #d4af37;
-  --gold-bright: #f0d78c;
-  --gold-soft: rgba(212, 175, 55, 0.18);
-  --champagne: #e8d5a3;
-  --burgundy: #7a2f45;
-  --burgundy-soft: rgba(122, 47, 69, 0.35);
-  --success: #6ecf9b;
-  --success-bg: rgba(46, 120, 85, 0.35);
-  --danger: #f0a090;
-  --danger-bg: rgba(122, 47, 69, 0.45);
-  --line: rgba(212, 175, 55, 0.28);
-  --shadow: 0 12px 40px rgba(5, 2, 18, 0.45);
-  --glow-gold: 0 0 24px rgba(212, 175, 55, 0.35);
-  --radius: 18px;
-  --radius-sm: 14px;
-  --font-sans: 'Source Sans 3', system-ui, sans-serif;
+  color-scheme: light;
+  /* SSD palette — Saved Sealed Delivered */
+  --wine: #510F1C;
+  --wine-deep: #1F0108;
+  --gold: #A58C47;
+  --gold-bright: #C9B06A;
+  --gold-champagne: #D0C2A6;
+  --cream: #F7F3EB;
+  --cream-dark: #EEEBE1;
+  --ivory: #FFFEFA;
+  --ink: #2A1A1D;
+  --muted: #6B5B5E;
+  /* App aliases mapped to SSD */
+  --bg-deep: #1F0108;
+  --bg: #510F1C;
+  --bg-mid: #6B1A2A;
+  --bg-elevated: #FFFEFA;
+  --card: #FFFEFA;
+  --card-solid: #FFFEFA;
+  --champagne: #D0C2A6;
+  --burgundy: #510F1C;
+  --burgundy-soft: rgba(81, 15, 28, 0.1);
+  --gold-soft: rgba(165, 140, 71, 0.16);
+  --success: #2d6a4f;
+  --success-bg: rgba(45, 106, 79, 0.12);
+  --danger: #8B3A3A;
+  --danger-bg: rgba(81, 15, 28, 0.1);
+  --line: rgba(208, 194, 166, 0.55);
+  --shadow: 0 12px 40px rgba(31, 1, 8, 0.12);
+  --glow-gold: 0 8px 28px rgba(165, 140, 71, 0.28);
+  --radius: 14px;
+  --radius-sm: 12px;
+  --font-sans: 'Outfit', system-ui, sans-serif;
   --font-serif: 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
   --tap: 56px;
   --max: 480px;
   --text-base: 1.125rem;
   --text-lead: 1.2rem;
+  --on-wine: #FFFEFA;
+  --surface-soft: rgba(81, 15, 28, 0.05);
+  --surface-mid: rgba(81, 15, 28, 0.08);
 }
 
 *,
@@ -42,21 +51,23 @@
 html {
   -webkit-text-size-adjust: 100%;
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   min-height: 100dvh;
   font-family: var(--font-sans);
+  font-weight: 400;
   font-size: var(--text-base);
   color: var(--ink);
   background:
-    radial-gradient(ellipse 900px 500px at 50% -8%, rgba(90, 50, 140, 0.55) 0%, transparent 60%),
-    radial-gradient(ellipse 600px 400px at 100% 40%, rgba(122, 47, 69, 0.2) 0%, transparent 50%),
-    radial-gradient(ellipse 500px 350px at 0% 80%, rgba(42, 27, 85, 0.8) 0%, transparent 55%),
-    linear-gradient(180deg, #1a1035 0%, #0f0a1f 100%);
+    radial-gradient(ellipse 900px 420px at 50% -6%, rgba(165, 140, 71, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse 500px 360px at 100% 30%, rgba(81, 15, 28, 0.06) 0%, transparent 50%),
+    linear-gradient(180deg, var(--cream) 0%, var(--cream-dark) 100%);
   background-attachment: fixed;
-  line-height: 1.6;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
 }
 
 button,
@@ -72,7 +83,7 @@ button {
 }
 
 a {
-  color: var(--gold-bright);
+  color: var(--wine);
 }
 
 #root {
@@ -80,6 +91,6 @@ a {
 }
 
 ::selection {
-  background: rgba(212, 175, 55, 0.35);
-  color: var(--cream);
+  background: rgba(165, 140, 71, 0.35);
+  color: var(--wine-deep);
 }
