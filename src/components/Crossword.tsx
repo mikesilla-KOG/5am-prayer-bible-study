@@ -68,6 +68,7 @@ export function Crossword({ puzzle, lessonId, stepNumber = 5 }: CrosswordProps) 
   const [activeEntryId, setActiveEntryId] = useState<string | null>(null)
   const [checked, setChecked] = useState(false)
   const [status, setStatus] = useState<'idle' | 'partial' | 'complete'>('idle')
+  const [solvedKeys, setSolvedKeys] = useState<Set<string>>(() => new Set())
   const gridRef = useRef<HTMLDivElement>(null)
 
   const across = useMemo(
@@ -205,25 +206,31 @@ export function Crossword({ puzzle, lessonId, stepNumber = 5 }: CrosswordProps) 
     else setStatus('partial')
   }, [cellMap, guesses])
 
-  // Live-check when every cell of active word is filled
+  // Permanently mark cells when a whole word is filled correctly
   useEffect(() => {
-    if (!activeEntry) return
-    const cells = entryCells(activeEntry)
-    const allFilled = cells.every((c) => guesses[cellKey(c.row, c.col)])
-    if (!allFilled) return
-    const allCorrect = cells.every((c) => {
-      const key = cellKey(c.row, c.col)
-      return guesses[key] === cellMap.get(key)?.letter
-    })
-    if (allCorrect) {
-      // Soft celebrate word; full puzzle check separately
-      const puzzleComplete = [...cellMap.keys()].every((k) => guesses[k] === cellMap.get(k)?.letter)
-      if (puzzleComplete) {
-        setChecked(true)
-        setStatus('complete')
+    const next = new Set<string>()
+    for (const entry of puzzle.entries) {
+      const cells = entryCells(entry)
+      const allCorrect =
+        cells.length > 0 &&
+        cells.every((c) => {
+          const key = cellKey(c.row, c.col)
+          return Boolean(guesses[key]) && guesses[key] === cellMap.get(key)?.letter
+        })
+      if (allCorrect) {
+        for (const c of cells) next.add(cellKey(c.row, c.col))
       }
     }
-  }, [guesses, activeEntry, cellMap])
+    setSolvedKeys((prev) => {
+      if (prev.size === next.size && [...next].every((k) => prev.has(k))) return prev
+      return next
+    })
+
+    if (cellMap.size > 0 && [...cellMap.keys()].every((k) => guesses[k] === cellMap.get(k)?.letter)) {
+      setChecked(true)
+      setStatus('complete')
+    }
+  }, [guesses, puzzle.entries, cellMap])
 
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
@@ -265,11 +272,22 @@ export function Crossword({ puzzle, lessonId, stepNumber = 5 }: CrosswordProps) 
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [selected, backspace, typeLetter, puzzle.entries, activeEntry])
 
-  // Auto-select first across clue on mount
+  // Reset board and auto-select first across clue when lesson changes
   useEffect(() => {
+    setGuesses({})
+    setSolvedKeys(new Set())
+    setChecked(false)
+    setStatus('idle')
     if (across[0]) selectEntry(across[0])
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [lessonId])
+
+  function isEntrySolved(entry: CrosswordEntry): boolean {
+    return entryCells(entry).every((c) => {
+      const key = cellKey(c.row, c.col)
+      return Boolean(guesses[key]) && guesses[key] === cellMap.get(key)?.letter
+    })
+  }
 
   function cellClass(row: number, col: number): string {
     const key = cellKey(row, col)
@@ -277,17 +295,12 @@ export function Crossword({ puzzle, lessonId, stepNumber = 5 }: CrosswordProps) 
     const classes = ['cw-cell', 'cw-letter']
     if (selected?.row === row && selected?.col === col) classes.push('cw-selected')
     else if (activeCellKeys.has(key)) classes.push('cw-in-word')
-    if (checked) {
+    if (solvedKeys.has(key)) {
+      classes.push('cw-correct')
+    } else if (checked) {
       const g = guesses[key]
       if (g) {
         classes.push(g === cellMap.get(key)!.letter ? 'cw-correct' : 'cw-wrong')
-      }
-    } else if (guesses[key] && activeEntry) {
-      const cells = entryCells(activeEntry)
-      const allFilled = cells.every((c) => guesses[cellKey(c.row, c.col)])
-      if (allFilled && activeCellKeys.has(key)) {
-        const ok = cells.every((c) => guesses[cellKey(c.row, c.col)] === cellMap.get(cellKey(c.row, c.col))?.letter)
-        if (ok) classes.push('cw-word-ok')
       }
     }
     return classes.join(' ')
@@ -378,7 +391,16 @@ export function Crossword({ puzzle, lessonId, stepNumber = 5 }: CrosswordProps) 
       </div>
 
       <div className="puzzle-actions">
-        <button type="button" className="btn secondary" onClick={() => { setGuesses({}); setChecked(false); setStatus('idle'); }}>
+        <button
+          type="button"
+          className="btn secondary"
+          onClick={() => {
+            setGuesses({})
+            setSolvedKeys(new Set())
+            setChecked(false)
+            setStatus('idle')
+          }}
+        >
           Clear
         </button>
         <button type="button" className="btn primary" onClick={checkPuzzle}>
@@ -404,15 +426,17 @@ export function Crossword({ puzzle, lessonId, stepNumber = 5 }: CrosswordProps) 
             {across.map((entry) => {
               const id = `${entry.direction}-${entry.number}`
               const active = activeEntryId === id
+              const solved = isEntrySolved(entry)
               return (
                 <li key={id}>
                   <button
                     type="button"
-                    className={`cw-clue-btn ${active ? 'active' : ''}`}
+                    className={`cw-clue-btn ${active ? 'active' : ''} ${solved ? 'solved' : ''}`}
                     onClick={() => selectEntry(entry)}
                   >
                     <span className="cw-clue-num">{entry.number}.</span>
                     <span className="cw-clue-text">{entry.clue}</span>
+                    {solved ? <span className="cw-clue-check" aria-label="Solved">✓</span> : null}
                   </button>
                 </li>
               )
@@ -425,15 +449,17 @@ export function Crossword({ puzzle, lessonId, stepNumber = 5 }: CrosswordProps) 
             {down.map((entry) => {
               const id = `${entry.direction}-${entry.number}`
               const active = activeEntryId === id
+              const solved = isEntrySolved(entry)
               return (
                 <li key={id}>
                   <button
                     type="button"
-                    className={`cw-clue-btn ${active ? 'active' : ''}`}
+                    className={`cw-clue-btn ${active ? 'active' : ''} ${solved ? 'solved' : ''}`}
                     onClick={() => selectEntry(entry)}
                   >
                     <span className="cw-clue-num">{entry.number}.</span>
                     <span className="cw-clue-text">{entry.clue}</span>
+                    {solved ? <span className="cw-clue-check" aria-label="Solved">✓</span> : null}
                   </button>
                 </li>
               )
